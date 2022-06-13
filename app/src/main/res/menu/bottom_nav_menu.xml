@@ -2,18 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_kurumsal"
+        android:icon="@drawable/kurumsal"
+        android:title="Kurumsal" />
+
+    <item
+        android:id="@+id/navigation_hizmetler"
+        android:icon="@drawable/hizmetler"
+        android:title="Hizmetler" />
+
+    <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Ana Menü" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:id="@+id/navigation_bilgi_merkezi"
+        android:icon="@drawable/bilgimerkezi"
+        android:title="Bilgi Merkezi" />
+
 
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_iletişim"
+        android:icon="@drawable/communucation"
+        android:title="İletişim" />
 
 </menu>

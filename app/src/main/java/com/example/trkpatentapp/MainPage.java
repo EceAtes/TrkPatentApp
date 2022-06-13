@@ -1,7 +1,7 @@
 package com.example.trkpatentapp;
 
 import android.os.Bundle;
-
+import android.supp
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
