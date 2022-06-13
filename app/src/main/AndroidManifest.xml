@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TürkPatentApp">
         <activity
-            android:name=".MainPage"
+            android:name=".giris"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal"
             android:exported="false"
             android:label="@string/title_activity_main_page" />
         <activity
