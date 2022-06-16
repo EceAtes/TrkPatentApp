@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadingScreen"
+    android:background="@drawable/screenshot_2022_06_15_120436">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/address_looking_up"
+        android:theme="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="#32587b"
+        android:indeterminateTintMode="src_in"
+
+        ></androidx.core.widget.ContentLoadingProgressBar>
+
+
+</RelativeLayout>
