@@ -16,7 +16,7 @@
         android:visibility="visible"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:indeterminateTint="#32587b"
+        android:indeterminateTint="#222830"
         android:indeterminateTintMode="src_in"
 
         ></androidx.core.widget.ContentLoadingProgressBar>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.trkpatentapp">
 
     <application
@@ -9,20 +10,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TürkPatentApp">
-
+        <activity
+            android:name=".kurumsal_kimlik"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_politikalar"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_etik"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_planlar"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_organizasyon"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_mevzuat"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_danisma"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_hakkimizda"
+            android:exported="false" />
+        <activity
+            android:name=".kurumsal_tarihce"
+            android:label="kurumsal tarihce"
+            android:exported="false" />
         <activity
             android:name=".giris"
             android:exported="false" />
         <activity
             android:name=".kurumsal"
-            android:exported="false"
-            android:label="@string/title_activity_main_page" />
+            android:label="kurumsal" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".LoadingScreen"
             android:exported="true">
