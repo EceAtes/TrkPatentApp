@@ -12,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:fillViewport="true"
-        android:layout_marginBottom="@dimen/activity_vertical_margin">
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:fillViewport="true">
 
         <LinearLayout
             android:id="@+id/scrollLayout"
@@ -22,145 +23,201 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/activity_vertical_margin">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tarihce"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50px"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="100px"
                 android:layout_marginTop="50px"
                 android:layout_marginRight="50px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"
+                android:background="@drawable/circle_button"
+                android:text="Tarihçe"
                 android:textAllCaps="false"
-                android:text="Tarihçe" />
+                android:textColor="@color/white"
+                android:textSize="22dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/hakkimizda"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Hakkımızda"
-                android:textAllCaps="false"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right|center_vertical"
                 android:layout_marginLeft="50px"
                 android:layout_marginTop="50px"
-                android:layout_marginRight="50px"
+                android:layout_marginRight="100px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Hakkımızda"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/yonetim"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Yönetim"
-                android:textAllCaps="false"
-                android:layout_marginLeft="50px"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="100px"
                 android:layout_marginTop="50px"
                 android:layout_marginRight="50px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Yönetim"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/danisma"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danışma Kurulu"
-                android:textAllCaps="false"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right|center_vertical"
                 android:layout_marginLeft="50px"
                 android:layout_marginTop="50px"
-                android:layout_marginRight="50px"
+                android:layout_marginRight="100px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Danışma Kurulu"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/organizasyon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Organizasyon"
-                android:textAllCaps="false"
-                android:layout_marginLeft="50px"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="100px"
                 android:layout_marginTop="50px"
                 android:layout_marginRight="50px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Organizasyon"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/mevzuat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mevzuat"
-                android:textAllCaps="false"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right|center_vertical"
                 android:layout_marginLeft="50px"
                 android:layout_marginTop="50px"
-                android:layout_marginRight="50px"
+                android:layout_marginRight="100px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Mevzuat"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/planlar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Plan / Program / Raporlar"
-                android:textAllCaps="false"
-                android:layout_marginLeft="50px"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="100px"
                 android:layout_marginTop="50px"
                 android:layout_marginRight="50px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Plan / Program / Raporlar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/etik"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Etik Komisyonu"
-                android:textAllCaps="false"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right|center_vertical"
                 android:layout_marginLeft="50px"
                 android:layout_marginTop="50px"
-                android:layout_marginRight="50px"
+                android:layout_marginRight="100px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Etik Komisyonu"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="40px"
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/kurumsal_politikalar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Kurumsal Politikalar"
-                android:textAllCaps="false"
-                android:layout_marginLeft="50px"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="100px"
                 android:layout_marginTop="50px"
                 android:layout_marginRight="50px"
                 android:layout_marginBottom="50px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:background="@drawable/circle_button"
+                android:text="Kurumsal Politikalar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/kurumsal_kimlik"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Kurumsal Kimlik Kılavuzu"
-                android:textAllCaps="false"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right|center_vertical"
                 android:layout_marginLeft="50px"
                 android:layout_marginTop="50px"
-                android:layout_marginRight="50px"
-                android:layout_marginBottom="100px"
-                android:background="@drawable/circular_button"
-                android:textSize="22dp"
-                android:textColor="@color/white"/>
+                android:layout_marginRight="100px"
+                android:layout_marginBottom="50px"
+                android:background="@drawable/circle_button"
+                android:text="Kurumsal Kimlik Kılavuzu"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+        </FrameLayout>
         </LinearLayout>
     </ScrollView>
 

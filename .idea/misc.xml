@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/drawable/circle_button.xml" value="0.1" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/drawable/circular_button.xml" value="0.1" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.28229166666666666" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.28229166666666666" />
@@ -19,7 +20,7 @@
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_bilgi_merkezi.xml" value="0.2" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_giris.xml" value="0.264" />
-        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_hizmetler.xml" value="0.152" />
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_hizmetler.xml" value="0.1" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_iletisim.xml" value="0.24864130434782608" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_kurumsal.xml" value="0.264" />
