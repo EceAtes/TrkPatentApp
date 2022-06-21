@@ -1,74 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/containerMain"
+    android:background="@color/light_gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="4"
-    android:orientation="vertical"
-    android:background="@color/purple_700">
+    android:orientation="horizontal"
+    android:baselineAligned="false">
 
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/containerChild1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:orientation="horizontal"
-        android:background="@color/purple_700">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/patent"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="@color/blue"
+            android:text="Patent / Faydalı Model"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/tasarim"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/marka"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="@color/blue"
+            android:text="Marka"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/cografi_isaret"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/patent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tasarim"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/blue"
+            android:background="@drawable/circular_button"
+            android:text="Tasarım"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/yeniden_inceleme"
+            app:layout_constraintEnd_toStartOf="@+id/cografi_isaret"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cografi_isaret"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="@color/blue"
+            android:text="Coğrafi İşaret"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/entegre"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yeniden_inceleme"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="@color/blue"
+            android:text="Yeniden İnceleme ve Değerlendirme"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/nav_view"
+            app:layout_constraintEnd_toStartOf="@+id/entegre"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entegre"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/circular_button"
+            android:backgroundTint="@color/blue"
+            android:text="Entegre Devre Topografyaları"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
 
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/containerChild2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:background="@color/purple_700">
-
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/containerChild3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:background="@color/purple_700">
-
-
-
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/bottom_nav_menu"/>
-
-    <!---
-    <fragment
-        android:id="@+id/nav_host_fragment_hizmetler"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:navGraph="@navigation/mobile_navigation" />  -->
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
