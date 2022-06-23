@@ -5,32 +5,246 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/white"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true" >
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50pt"
-        android:layout_marginBottom="356dp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/white"
-        android:text="İletişim"
+        android:orientation="vertical"
         android:textAlignment="center"
-        android:textSize="50dp"/>
+        >
+
+
+        <TextView
+            android:id="@+id/iletisim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İletişim"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:background="@color/light_gray"
+            android:padding="@dimen/activity_vertical_margin"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50px"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/bilgilendirme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iletisim"
+            android:layout_marginBottom="50px"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:text="İnteraktif Bilgilendirme Servisi: (0 312) 303 1 303"
+            android:textAlignment="center"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eposta: destek@turkpatent.gov.tr"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="50px"
+            android:layout_below="@id/bilgilendirme"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mail"
+            android:layout_marginBottom="50px"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:text="Adres: Gazi Mahallesi Hipodrom Caddesi No:13 (06560) Yenimahalle / ANKARA"
+            android:textAlignment="center"
+            android:textColor="@color/black"></TextView>
+
+
+        <TextView
+            android:id="@+id/santral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Santral: (0 312) 303 10 00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="50px"
+            android:layout_below="@id/adres"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/fax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faks: (0 312) 303 11 73"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="50px"
+            android:layout_below="@id/santral"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Website: https://www.turkpatent.gov.tr"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="50px"
+            android:layout_below="@+id/fax"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/intrTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medya Mensuplarının Röportaj ve Bilgi Talepleri İçin:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="50px"
+            android:layout_marginTop="50px"
+            android:layout_below="@id/website"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/intrPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefon : 0 312 303 10 00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="50px"
+            android:layout_below="@id/intrTitle"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/intrMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-posta : medya@turkpatent.gov.tr"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:layout_marginBottom="50px"
+            android:layout_below="@id/intrPhone"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/ile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intrMail"
+            android:layout_marginBottom="50px"
+            android:fontFamily="serif"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="CİMER bilgi edinme başvurusu için tıklayınız"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/ile"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="10px"
+            android:onClick="goToTwitter"
+            app:srcCompat="@drawable/twitter_2"
+
+            />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/ile"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="10px"
+            android:layout_toRightOf="@id/youtube"
+            android:onClick="goToFacebook"
+            app:srcCompat="@drawable/facebook_2" />
+
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/ile"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="10px"
+            android:layout_toRightOf="@id/linkedin"
+            android:onClick="goToInsta"
+            app:srcCompat="@drawable/instagram_2" />
+
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/ile"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="10px"
+            android:layout_toRightOf="@id/facebook"
+            android:onClick="goToLinkedin"
+            app:srcCompat="@drawable/linkedin_1" />
+
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/ile"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="10px"
+            android:layout_toRightOf="@id/twitter"
+            android:onClick="goToYoutube"
+            app:srcCompat="@drawable/youtube" />
 
 
 
-
-    </LinearLayout>
+    </RelativeLayout>
     </ScrollView>
 
 
@@ -43,6 +257,9 @@
         android:background="?android:attr/windowBackground"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu" />
+
+
+
     <!---
     <fragment
         android:id="@+id/nav_host_fragment_iletisim"
