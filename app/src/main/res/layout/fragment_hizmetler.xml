@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/light_gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:baselineAligned="false">
+    android:background="@color/light_gray"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -14,8 +14,6 @@
             android:layout_width="185dp"
             android:layout_height="185dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="40dp"
             android:background="@drawable/circular_button"
             android:backgroundTint="@color/blue"
             android:text="Patent / Faydalı Model"
@@ -24,7 +22,8 @@
             android:textSize="22dp"
             app:layout_constraintBottom_toTopOf="@+id/tasarim"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.751" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/marka"
@@ -33,7 +32,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="40dp"
             android:background="@drawable/circular_button"
             android:backgroundTint="@color/blue"
             android:text="Marka"
@@ -42,8 +40,10 @@
             android:textSize="22dp"
             app:layout_constraintBottom_toTopOf="@+id/cografi_isaret"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/patent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.736" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/tasarim"
@@ -51,25 +51,24 @@
             android:layout_height="185dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="40dp"
-            android:backgroundTint="@color/blue"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/circular_button"
+            android:backgroundTint="@color/blue"
             android:text="Tasarım"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="22dp"
             app:layout_constraintBottom_toTopOf="@+id/yeniden_inceleme"
             app:layout_constraintEnd_toStartOf="@+id/cografi_isaret"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/cografi_isaret"
             android:layout_width="185dp"
             android:layout_height="185dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/circular_button"
             android:backgroundTint="@color/blue"
             android:text="Coğrafi İşaret"
@@ -85,7 +84,7 @@
             android:layout_height="185dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="48dp"
             android:background="@drawable/circular_button"
             android:backgroundTint="@color/blue"
             android:text="Yeniden İnceleme ve Değerlendirme"
@@ -94,14 +93,15 @@
             android:textSize="22dp"
             app:layout_constraintBottom_toTopOf="@+id/nav_view"
             app:layout_constraintEnd_toStartOf="@+id/entegre"
+            app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/entegre"
             android:layout_width="185dp"
             android:layout_height="185dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="44dp"
             android:background="@drawable/circular_button"
             android:backgroundTint="@color/blue"
             android:text="Entegre Devre Topografyaları"
