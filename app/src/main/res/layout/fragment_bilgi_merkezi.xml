@@ -10,38 +10,158 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150px"
+        >
 
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/relLay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="120px">
+            android:layout_marginBottom="150px"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button4"
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bilgi Merkezi"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="40sp"
+                android:padding="20px"
+                android:layout_marginBottom="50px"
+                android:background="@color/lighter_dark_blue"
+
+                ></TextView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/istatik"
+                android:layout_below="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patent Yıllık İstatistikler"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="İstatistikler"
                 android:textAllCaps="false"
-                android:background="@color/lighter_dark_blue"/>
+                android:textColor="@color/blueish_white"
+                android:textSize="25sp" />
 
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/yayımlar"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_below="@id/istatik"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="Yayımlarımız"
+                android:textAllCaps="false"
+                android:textColor="@color/blueish_white"
+                android:textSize="25sp" />
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bilgi_birim"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_below="@id/yayımlar"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="Bilgi/Doküman Birimleri"
+                android:textAllCaps="false"
+                android:textColor="@color/blueish_white"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/evrak_sorgulama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bilgi_birim"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="Evrak Sorgulama"
+                android:textAllCaps="false"
+                android:textColor="@color/blueish_white"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/galeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/evrak_sorgulama"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="Görsel Galeri"
+                android:textAllCaps="false"
+                android:textColor="@color/blueish_white"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/etkinlikler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/galeri"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="Etkinliklerimiz"
+                android:textAllCaps="false"
+                android:textColor="@color/blueish_white"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bültenler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etkinlikler"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="Bültenler"
+                android:textAllCaps="false"
+                android:textColor="@color/blueish_white"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/vekiller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bültenler"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="200px"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/pastel_blue"
+                android:padding="50px"
+                android:text="Patent/Marka Vekilleri"
+                android:textAllCaps="false"
+                android:textColor="@color/blueish_white"
+                android:textSize="25sp" />
 
 
-
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

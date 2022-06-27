@@ -13,4 +13,7 @@
     <color name="blue">#32587b</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="pastel_blue">#75b0e0</color>
+    <color name="blueish_white">#e5f2fc</color>
+
 </resources>
