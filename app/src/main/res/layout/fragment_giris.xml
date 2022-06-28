@@ -38,7 +38,7 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/başvuruPatent"
+                android:id="@+id/başvuruPatent1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circular_button"
@@ -51,7 +51,7 @@
                 android:layout_marginBottom="80px"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/araştırmaPatent"
+                android:id="@+id/araştırmaPatent1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circular_button"
@@ -89,7 +89,7 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/başvuruMarka"
+                android:id="@+id/başvuruMarka1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circular_button"
@@ -102,7 +102,7 @@
                 android:layout_marginBottom="80px"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/araştırmaMarka"
+                android:id="@+id/araştırmaMarka1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circular_button"
@@ -152,7 +152,7 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/başvuruTasarım"
+                android:id="@+id/başvuruTasarım1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circular_button"
@@ -165,7 +165,7 @@
                 android:layout_marginBottom="80px"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/araştırmaTasarım"
+                android:id="@+id/araştırmaTasarım1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circular_button"
@@ -203,7 +203,7 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/başvuruİşaret"
+                android:id="@+id/başvuruİşaret1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circular_button"
@@ -212,7 +212,6 @@
                 android:textAllCaps="false"
                 android:padding="40px"
                 android:textColor="@color/white"
-                android:textSize="18dp"
                 android:layout_marginBottom="80px"/>
 
 

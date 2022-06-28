@@ -4,57 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kurumsal_tarihce">
+    tools:context=".kurumsal_tarihce"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tarihçe"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
 
     <ScrollView
+        android:layout_below="@id/title"
+        android:id="@+id/scrollMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:fillViewport="true">
+        android:layout_marginBottom="150px"
+        >
 
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/relLay"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/activity_vertical_margin">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150px"
+            android:orientation="vertical">
+
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tarihçe"
-                android:textAlignment="center"
-                android:textColor="@color/dark_blue"
-                android:background="@color/light_gray"
-                android:padding="@dimen/activity_vertical_margin"
-                android:fontFamily="sans-serif-black"
-                android:textSize="40dp"/>
 
-            <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ülkemizin 1995 yılında Dünya Ticaret Örgütü Kuruluş Anlaşması ve eki Ticaretle Bağlantılı Fikri Mülkiyet Hakları Anlaşmasına taraf olması, AB ile Gümrük Birliği anlaşması yapılması ve aynı dönemde Avrupa Birliğinde sınai mülkiyet alanında çeşitli düzenlemelerin ve Topluluk mevzuatının üye ülkelerle uyumlaştırılması çalışmalarının yapılması gibi gelişmeler Türkiye’de de sınai mülkiyet haklarının uluslararası standartlarda ve etkin bir biçimde korunması zorunluluğunu beraberinde getirmiştir.
-
-Bu doğrultuda 24 Haziran 1994 tarihinde 544 sayılı Kanun Hükmünde Kararnameyle (KHK) o zamanki adıyla Türk Patent Enstitüsü kurulmuştur. 544 sayılı KHK kapsamında Enstitünün kuruluş amacı “Türkiye'nin teknolojik ilerlemesine katkıda bulunmak, ülke içinde serbest rekabet ortamını oluşturmak ve araştırma geliştirme faaliyetlerinin gelişmesini sağlamak üzere çeşitli kanunlarla düzenlenmiş olan patent ve markalar ile diğer kanunlarla düzenlenen sınai mülkiyet haklarının tescili, bu konuda korumanın sağlanması ve sınai mülkiyet haklarına ilişkin yurtiçi ve dışında var olan bilgi ve dokümantasyonun kamunun istifadesine sunulabilmesi” olarak tanımlanmıştır.
-
-1995 yılında patent, marka, endüstriyel tasarım ve coğrafi işaretler alanlarında Kanun Hükmünde Kararnameler yürürlüğe girmiştir. 544 sayılı KHK'nın kanunlaştırılması ve günün ihtiyaçlarının karşılanması amacıyla 19 Kasım 2003 tarihinde 5000 sayılı Türk Patent Enstitüsü Kuruluş ve Görevleri Hakkında Kanun yürürlüğe girmiştir.
-
-Kanun ile Kurumun kuruluş amacı korunmuş olup Kurum bu Kanunla “akademik çalışmaları desteklemek” görevini de üstlenmiştir. Aynı Kanunla, artan tasarım başvurularına etkin bir koruma sağlamak amacıyla, Kurumun organ ve birimleri arasında yer alan “ana hizmet birimleri”ne “Endüstriyel Tasarımlar Dairesi Başkanlığı” eklenmiştir.
-
-22 Nisan 2004 tarihinde 5147 sayılı Entegre Devre Topoğrafyalarının Korunması Hakkında Kanun yürürlüğe girmiştir. 10 Ocak 2017 tarihinde 6769 sayılı Sınai Mülkiyet Kanunu yürürlüğe girmiş ve Kanunla Türk sınai mülkiyet mevzuatının uluslararası anlaşmalara ve AB mevzuatına uyumu artırılmış ve TÜRKPATENT’in kurumsal yapısı güçlendirilmiştir.
-
-6769 sayılı Kanunla Türk Patent Enstitüsünün adı “Türk Patent ve Marka Kurumu” olarak değiştirilmiş, Kurum bünyesinde “Yeniden İnceleme ve Değerlendirme Dairesi Başkanlığı”, “Coğrafi İşaretler Dairesi Başkanlığı” ve “Strateji Geliştirme Dairesi Başkanlığı” kurulmuştur. Bunların yanında TÜRKPATENT’in 5000 sayılı Kanunla tanımlanan “akademik çalışmaları desteklemek” görevini gerçekleştirmesi amacıyla “Fikri Mülkiyet Akademisi ve Sınai Mülkiyet Eğitim Merkezi” kurulmuştur.
-
-15 Temmuz 2018 tarih ve 4 sayılı Bakanlıklara Bağlı, İlgili, İlişkili Kurum ve Kuruluşlar ile Diğer Kurum ve Kuruluşların Teşkilatı Hakkında Cumhurbaşkanlığı Kararnamesi ile TÜRKPATENT’in kuruluş ve kurumsal yapısı ile ilgili hükümler söz konusu Kararnameye aktarılmıştır."
+                android:fontFamily="@font/sen"
+                android:padding="45px"
+                android:text="Ülkemizin 1995 yılında Dünya Ticaret Örgütü Kuruluş Anlaşması ve eki Ticaretle Bağlantılı Fikri Mülkiyet Hakları Anlaşmasına taraf olması, AB ile Gümrük Birliği anlaşması yapılması ve aynı dönemde Avrupa Birliğinde sınai mülkiyet alanında çeşitli düzenlemelerin ve Topluluk mevzuatının üye ülkelerle uyumlaştırılması çalışmalarının yapılması gibi gelişmeler Türkiye’de de sınai mülkiyet haklarının uluslararası standartlarda ve etkin bir biçimde korunması zorunluluğunu beraberinde getirmiştir."
                 android:textAlignment="center"
                 android:textColor="@color/dark_blue"
-                android:background="@drawable/turkpatent_turkish_patent_and_trademark_office_building_md"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
 
-        </LinearLayout>
+            <TextView
+
+                android:id="@+id/textView8"
+                android:layout_below="@id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sen"
+                android:padding="45px"
+                android:text="Bu doğrultuda 24 Haziran 1994 tarihinde 544 sayılı Kanun Hükmünde Kararnameyle (KHK) o zamanki adıyla Türk Patent Enstitüsü kurulmuştur. 544 sayılı KHK kapsamında Enstitünün kuruluş amacı “Türkiye'nin teknolojik ilerlemesine katkıda bulunmak, ülke içinde serbest rekabet ortamını oluşturmak ve araştırma geliştirme faaliyetlerinin gelişmesini sağlamak üzere çeşitli kanunlarla düzenlenmiş olan patent ve markalar ile diğer kanunlarla düzenlenen sınai mülkiyet haklarının tescili, bu konuda korumanın sağlanması ve sınai mülkiyet haklarına ilişkin yurtiçi ve dışında var olan bilgi ve dokümantasyonun kamunun istifadesine sunulabilmesi” olarak tanımlanmıştır."
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp" />
+
+
+            <TextView
+
+                android:id="@+id/textView9"
+                android:layout_below="@id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sen"
+                android:padding="45px"
+                android:text="1995 yılında patent, marka, endüstriyel tasarım ve coğrafi işaretler alanlarında Kanun Hükmünde Kararnameler yürürlüğe girmiştir. 544 sayılı KHK'nın kanunlaştırılması ve günün ihtiyaçlarının karşılanması amacıyla 19 Kasım 2003 tarihinde 5000 sayılı Türk Patent Enstitüsü Kuruluş ve Görevleri Hakkında Kanun yürürlüğe girmiştir."
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp" />
+
+            <TextView
+
+                android:id="@+id/textView10"
+                android:layout_below="@id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sen"
+                android:padding="45px"
+                android:text="Kanun ile Kurumun kuruluş amacı korunmuş olup Kurum bu Kanunla “akademik çalışmaları desteklemek” görevini de üstlenmiştir. Aynı Kanunla, artan tasarım başvurularına etkin bir koruma sağlamak amacıyla, Kurumun organ ve birimleri arasında yer alan “ana hizmet birimleri”ne “Endüstriyel Tasarımlar Dairesi Başkanlığı” eklenmiştir."
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp" />
+
+
+            <TextView
+
+                android:id="@+id/textView11"
+                android:layout_below="@id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sen"
+                android:padding="45px"
+                android:text="22 Nisan 2004 tarihinde 5147 sayılı Entegre Devre Topoğrafyalarının Korunması Hakkında Kanun yürürlüğe girmiştir. 10 Ocak 2017 tarihinde 6769 sayılı Sınai Mülkiyet Kanunu yürürlüğe girmiş ve Kanunla Türk sınai mülkiyet mevzuatının uluslararası anlaşmalara ve AB mevzuatına uyumu artırılmış ve TÜRKPATENT’in kurumsal yapısı güçlendirilmiştir."
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp" />
+
+
+            <TextView
+
+                android:id="@+id/textView12"
+                android:layout_below="@id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sen"
+                android:padding="45px"
+                android:text="6769 sayılı Kanunla Türk Patent Enstitüsünün adı “Türk Patent ve Marka Kurumu” olarak değiştirilmiş, Kurum bünyesinde “Yeniden İnceleme ve Değerlendirme Dairesi Başkanlığı”, “Coğrafi İşaretler Dairesi Başkanlığı” ve “Strateji Geliştirme Dairesi Başkanlığı” kurulmuştur. Bunların yanında TÜRKPATENT’in 5000 sayılı Kanunla tanımlanan “akademik çalışmaları desteklemek” görevini gerçekleştirmesi amacıyla “Fikri Mülkiyet Akademisi ve Sınai Mülkiyet Eğitim Merkezi” kurulmuştur."
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp" />
+
+
+            <TextView
+
+                android:id="@+id/textView13"
+                android:layout_below="@id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sen"
+                android:padding="45px"
+                android:text="15 Temmuz 2018 tarih ve 4 sayılı Bakanlıklara Bağlı, İlgili, İlişkili Kurum ve Kuruluşlar ile Diğer Kurum ve Kuruluşların Teşkilatı Hakkında Cumhurbaşkanlığı Kararnamesi ile TÜRKPATENT’in kuruluş ve kurumsal yapısı ile ilgili hükümler söz konusu Kararnameye aktarılmıştır."
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
     </ScrollView>
 
 

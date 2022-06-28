@@ -20,8 +20,8 @@ public class giris extends Fragment{
         View view = inflater.inflate(R.layout.fragment_iletisim, container, false);
 
 
-        Button patentBasvuru = (Button) view.findViewById(R.id.başvuruPatent);
-        patentBasvuru.setOnClickListener(new View.OnClickListener() {
+        Button başvuruPatent = (Button) view.findViewById(R.id.başvuruPatent1);
+        başvuruPatent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://epats.turkpatent.gov.tr/run/TP/EDEVLET/giris";
@@ -31,7 +31,7 @@ public class giris extends Fragment{
             }
         });
 
-        Button patentArastirma = (Button) view.findViewById(R.id.araştırmaPatent);
+        Button patentArastirma = (Button) view.findViewById(R.id.araştırmaPatent1);
         patentArastirma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +42,7 @@ public class giris extends Fragment{
             }
         });
 
-        Button basvuruMarka = (Button) view.findViewById(R.id.başvuruMarka);
+        Button basvuruMarka = (Button) view.findViewById(R.id.başvuruMarka1);
         basvuruMarka.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +54,7 @@ public class giris extends Fragment{
         });
 
 
-        Button arastirmaMarka = (Button) view.findViewById(R.id.araştırmaMarka);
+        Button arastirmaMarka = (Button) view.findViewById(R.id.araştırmaMarka1);
         arastirmaMarka.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,7 +66,7 @@ public class giris extends Fragment{
         });
 
 
-        Button araştırmaTasarım = (Button) view.findViewById(R.id.araştırmaTasarım);
+        Button araştırmaTasarım = (Button) view.findViewById(R.id.araştırmaTasarım1);
         araştırmaTasarım.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,7 +78,7 @@ public class giris extends Fragment{
         });
 
 
-        Button başvuruTasarım = (Button) view.findViewById(R.id.başvuruTasarım);
+        Button başvuruTasarım = (Button) view.findViewById(R.id.başvuruTasarım1);
         başvuruTasarım.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,7 +89,7 @@ public class giris extends Fragment{
             }
         });
 
-        Button başvuruİşaret = (Button) view.findViewById(R.id.başvuruİşaret);
+        Button başvuruİşaret = (Button) view.findViewById(R.id.başvuruİşaret1);
         başvuruİşaret.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
