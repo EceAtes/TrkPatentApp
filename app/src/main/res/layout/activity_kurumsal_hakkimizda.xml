@@ -1,9 +1,280 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kurumsal_hakkimizda">
+    android:background="@color/light_gray"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Linear0"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vizyonumuz"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Türkiye’nin fikri sermayesinin ve yenilik kapasitesinin artırılmasına katkı sağlayan, sınai mülkiyet alanında ulusal ve uluslararası politikalara yön veren bir kurum olmak."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+
+                        />
+
+                </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/lighter_dark_blue"
+                android:layout_margin="20px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Misyonumuz"
+                    android:padding="25px"
+                    android:layout_marginTop="25px"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/sen"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:layout_marginBottom="20px"
+                    android:text="Sınai mülkiyet bilincini toplumun bütün kesimlerinde artırarak, sınai mülkiyet haklarının etkin korunmasına ve ticarileştirilmesine katkı sağlayarak ve uluslararası platformlarda etkin rol oynayarak Milli Teknoloji Hamlesi doğrultusunda ülkemizin ekonomik ve teknolojik gelişimine hizmet etmek."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear1"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Türk Patent ve Marka Kurumu’nun Görevleri"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="A-) Patentler, faydalı modeller, markalar, coğrafi işaretler, geleneksel ürün adları, tasarımlar ile entegre devre topoğrafyalarının ilgili mevzuat hükümleri uyarınca tescilini ve bu hakların korunması ile ilgili işlemleri yapar."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="B-) Zorunlu lisans işlemlerinde arabuluculuk faaliyetlerinde bulunur ve mahkemelerde bilirkişilik yapar."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="C-) Lisans ve devir anlaşmalarını tescil ve kayıt eder."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Ç-) Buluşların kullanımını takip eder, yeni teknolojilerin değerlendirilmesi ile teknoloji transferinin yönlendirilmesi ve arşivlenmesi işlemlerini yapar."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="D-) Sınai mülkiyet alanında Avrupa Birliği, uluslararası kuruluşlar ve yabancı ülkelerle ilişkileri yürütür, işbirliğinde bulunur."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="E-) Türkiye'yi Bakanlığın onayı ile uluslararası kuruluşlar nezdinde temsil eder.
+Sınaî mülkiyet hakları ile ilgili uluslararası anlaşmaların hazırlanmasına ülke çıkarlarını koruyarak katkıda bulunur ve bu anlaşmaların Türkiye'de uygulanmasını sağlar."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="F-) Yurt içi ve yurt dışında teknoloji ve araştırma- geliştirme ile ilgili kurum ve kuruluşlarla ve bilgi bankalarıyla işbirliği yapar, dokümantasyon merkezleri kurar, bu bilgileri kamunun istifadesine sunar."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="G-) Sınai mülkiyet hakları ile ilgili olarak yayınlar yapar."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Ğ-) Sınaî mülkiyet hakları konularında yurt içinde kişi ve kuruluşların bilgilendirilmesi ve yönlendirilmesi için gerekli çalışmaları yapar."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="H-) Sınai mülkiyet alanında yurt içinde ve yurt dışında kişi ve kuruluşlara eğitim verilmesine yönelik çalışmalar yapar, görev alanına giren konularla ilgili eğitim faaliyetlerini ve akademik çalışmaları destekler."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_weight="0"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/lighter_dark_blue"
+        app:itemIconTint="@color/red"
+        app:itemTextColor="@color/red"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
