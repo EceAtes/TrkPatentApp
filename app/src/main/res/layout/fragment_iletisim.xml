@@ -11,10 +11,12 @@
     android:layout_alignParentTop="true" >
 
     <ScrollView
+        android:id="@+id/scrollIletisim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     <RelativeLayout
+        android:id="@+id/relLayIletisim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"

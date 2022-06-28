@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/loading"
     tools:context=".LoadingScreen"
     android:background="@drawable/screenshot_2022_06_15_120436">
 
