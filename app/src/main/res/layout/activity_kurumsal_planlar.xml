@@ -1,9 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kurumsal_planlar">
+    android:background="@color/white"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Planlar / Program / Raporlar"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+    <ScrollView
+        android:id="@+id/scrollPlanlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relLayPlanlar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/strBelge"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Strateji Belgeleri"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/strPlan"
+                android:layout_below="@id/strBelge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Stratejik Planlar"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/performans"
+                android:layout_below="@id/strPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Performans Programları YIllık"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/faaliyet"
+                android:layout_below="@id/performans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Faaliyet Raporları Yıllık"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/maliDurum"
+                android:layout_below="@id/faaliyet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Mali Durum ve Beklenti Raporları"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/yıllıkRapor"
+                android:layout_below="@id/maliDurum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Mali Raporlar Yıllık"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/aylıkRapor"
+                android:layout_below="@id/yıllıkRapor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Mali Raporlar Aylık"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/hizmet"
+                android:layout_below="@id/aylıkRapor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Hizmet Standartları Tablosu"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/harcama"
+                android:layout_below="@id/hizmet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25px"
+                android:background="@drawable/circular_button"
+                android:text="Mal, hizmet ve Yapım Harcamaları"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/pastel_blue"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+    <!---
+    <fragment
+        android:id="@+id/nav_host_fragment_iletisim"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/mobile_navigation" />  -->
+
+</RelativeLayout>
