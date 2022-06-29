@@ -1,9 +1,587 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kurumsal_danisma">
+    tools:context=".kurumsal_yonetim">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danışma Kurulu"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:stretchColumns="1"
+                android:layout_margin="25px">
+
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Altan Fatih MEHAN" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Adalet Bakanlığı" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Mehmet BAŞ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Aile, Çalışma ve Sosyal Hizmetler Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Nur ALKIŞ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Dışişleri Bakanlığı" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Hüseyin ÇAKIRTAŞ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="İçişleri Bakanlığı" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Mehmet KAYA" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Hazine ve Maliye Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Fatoş ALTUNÇ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Kültür ve Turizm Bakanlığı" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Prof. Dr. Kemal Varın NUMANOĞLU" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Millî Eğitim Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="İbrahim Halil AĞAÇ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Millî Savunma Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Doç. Dr. Fatih KARA" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Sağlık Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Zekeriya ÇOŞTU" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Sanayi ve Teknoloji Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Özgür Akif TEL" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Tarım ve Orman Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Kadir TURSUN" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Ticaret Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginTop="25px"
+                        android:padding="20px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Arzu KÜTÜKÇÜOĞLU" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Avrupa Birliği Başkanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginTop="25px"
+                        android:padding="20px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Cemil Arda TAŞPINAR" />
+
+                    <TextView
+                        android:padding="25px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Küçük ve Orta Ölçekli \nİşletmeleri Geliştirme ve \nDestekleme İdaresi Başkanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Hüseyin Alper TÜREDİ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türk Standardları Enstitüsü" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Murat BAYBALI" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türkiye Bilimsel ve Teknolojik \nAraştırma Kurumu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Dr. Mehmet Hakan FIRAT" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türkiye İlaç ve Tıbbı \nCihaz Kurumu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Fatih Kemal EBİÇLİOĞLU" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türkiye İhracatçılar Meclisi" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Cengiz DELİBAŞ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türkiye Odalar ve Borsalar \nBirliği" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Ekrem POYRAZ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türk Mühendis ve Mimar \nOdaları Birliği" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Dr. Hakan GİRİTLİOĞLU" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türk Tabipleri Birliği" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Enes Gazi ATICI" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türk Veteriner Hekimleri Birliği" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Ecz. İhsan Orkun YILMAZ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türk Eczacıları Birliği" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Fatma Yasemin ERTEKİN" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türkiye Esnaf ve Sanatkârları \nKonfederasyonu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Av. Erdal ARAP" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türkiye İşçi Sendikaları \nKonfederasyonu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Muzaffer BAL" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türkiye İşveren Sendikaları \nKonfederasyonu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Prof. Dr. Orhan AYDIN" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Yükseköğretim Kurulu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Prof. Dr. Murat Ali DULUPÇU" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Yükseköğretim Kurulu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Prof. Dr. Mehmet Arif ADLI" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Yükseköğretim Kurulu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Prof. Dr. Hayri BOZGEYİK" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Yükseköğretim Kurulu" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Prof. Dr. Ali SINAĞ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Yükseköğretim Kurulu" />
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:layout_margin="20px"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:textAlignment="center"
+                    android:text="Danışma Kurulu, Kurumun faaliyetleri çerçevesinde ve Kuruma yardımcı olmak maksadıyla; Türkiye'nin teknolojik gelişimine ve sınaî mülkiyet haklarının etkin biçimde korunmasına, rekabet ortamının yaratılmasına ilişkin olarak, Kurumun çalışma ilkeleri, faaliyet raporu, bütçe ve çalışma programları hakkında düşünce bildirir ve tavsiyelerde bulunur."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>
