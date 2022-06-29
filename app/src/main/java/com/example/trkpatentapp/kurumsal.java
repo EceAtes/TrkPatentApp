@@ -1,10 +1,12 @@
 package com.example.trkpatentapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
@@ -16,7 +18,20 @@ public class kurumsal extends Fragment{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_kurumsal, container, false);
+        View view = inflater.inflate(R.layout.fragment_kurumsal, container, false);
+
+        Button mevzuat = (Button) view.findViewById(R.id.mevzuat);
+        mevzuat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.turkpatent.gov.tr/mevzuat";
+                Uri uriUrl = Uri.parse(url);
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                startActivity(launchBrowser);
+            }
+        });
+
+        return view;
     }
 
     public void onClick(View v) {
