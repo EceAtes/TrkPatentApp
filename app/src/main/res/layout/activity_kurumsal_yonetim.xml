@@ -1,9 +1,1365 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".kurumsal_yonetim">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yönetim"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:stretchColumns="1"
+                android:layout_margin="25px">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:background="@color/lighter_dark_blue"
+                        android:text="Yönetim Kurulu"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:padding="25px"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Cemil BAŞPINAR (Başkan V.)" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Türk Patent ve Marka Kurumu" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Ebubekir GİZLİGİDER (Üye)" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Sanayi ve Teknoloji Bakanlığı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Prof. Dr. İsmail KOYUNCU (Üye)" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Sanayi ve Teknoloji Bakanlığı" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Faruk ÇAKMAK (Üye)" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Hazine ve Maliye Bakanlığı" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Alim POLAT (Üye)" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Adalet Bakanlığı" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:background="@color/lighter_dark_blue"
+                        android:text="Yönetim Kurulu"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:padding="25px"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Cemil BAŞPINAR" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Kurum Başkan V." />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Dr. Mehmet DUYAR" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Kurum Başkan Yardımcısı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:background="@color/lighter_dark_blue"
+                        android:text="Daire Başkanları"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:padding="25px"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Ahmet Şevki DAĞKIRAN" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="1.Hukuk Müşaviri" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Salih BEKTAŞ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Dr. Mehmet DUYAR" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Markalar Dairesi Başkanı V." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Fatih KARAHAN" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Tasarımlar Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Hakan KIZILTEPE" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Coğrafi İşaretler Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginTop="25px"
+                        android:padding="20px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Tamer AYAR" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Avrupa Birliği ve Dış \nİlişkiler Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginTop="25px"
+                        android:padding="20px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Dr. Elif Betül AKIN" />
+
+                    <TextView
+                        android:padding="25px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Yeniden İnceleme ve \nDeğerlendirme Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Muhammed Ali IŞIK" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Personel Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Mustafa YILDIRIM" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Destek Hizmetleri Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Salih KOCA" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Yenilik ve Tanıtım Dairesi Başkanı" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Tuğba YILMAZ" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Bilgi İşlem Dairesi Başkan V." />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:text="Dr. İbrahim YAŞAR" />
+
+                    <TextView
+                        android:padding="15px"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/sen"
+                        android:text="Strateji Geliştirme Dairesi Başkanı" />
+                </TableRow>
+
+
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear14"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yönetim Kurulu"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Yönetim Kurulu, Kurumun en yüksek düzeyde yönetim ve karar organıdır. \n
+• Yönetim Kurulu; Adalet Bakanlığı ile Hazine ve Maliye Bakanlığından birer üye, Sanayi ve Teknoloji Bakanlığının belirleyeceği üç üye, Kurum Başkanı ve bir Başkan Yardımcısı olmak üzere yedi üyeden oluşur.\n
+• Kurumun Başkanı aynı zamanda Yönetim Kurulu Başkanıdır. \n
+• Yönetim Kurulu Başkanı hariç üyelerinin görev süresi üç yıldır. Görev süresi biten üyeler yeniden seçilebilir. Başkan Yardımcısının görevinin sona ermesi halinde Yönetim Kurulu üyeliği de sona erer.\n
+• Başkanın olmadığı hallerde Başkana Başkan Yardımcısı vekâlet eder.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear15"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Türk Patent ve Marka Kurumu’nun Görevleri"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="45px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Kurumun idarî, malî ve teknik yönden düzenli, verimli ve etkin faaliyette bulunabilmesi için gerekli bütün tedbirleri alır. Kurumun işleyişine etkinlik kazandırmak amacı ile hazırlayacağı yönetmeliklerin Bakanlığın onayı ile yürürlüğe girmesini sağlar\n.
+ • Kurum ile ilgili mevzuatın uygulanmasını sağlar.\n
+ • Kurumun bütçesini onaylar.\n
+ • Hazırlanan faaliyet raporunu ve malî raporu görüşüp karara bağlar.\n
+ • Sınaî mülkiyet hakları ve teknolojik ilerleme konusunda planlar ve yıllık programlar doğrultusunda kısa ve uzun vadeli çalışma programları hazırlar, araştırma konuları tespit eder ve bunları uygulamaya koyar.\n
+ • Kurumun vereceği hizmetler karşılığında alınacak ücret tarifelerini hazırlar ve Sanayi ve Teknoloji Bakanlığının uygun görüşü üzerine uygulamaya koyar.\n
+ • Başkan tarafından yapılacak atama önerilerini karara bağlar.\n
+ • Gerektiğinde Danışma Kurulunu toplantıya çağırır.\n
+ • Danışma Kurulunun tavsiye kararlarını görüşüp karara bağlar.\n
+ • Kurumun görev alanına giren konularda kamuoyunu aydınlatmak ve ilgililerin görüşlerini almak için ulusal ve uluslararası nitelikte seminer, sempozyum, açık oturum, konferans ve benzeri konuların düzenlenmesine karar verir.\n
+ • Sınaî mülkiyet haklarıyla ilgili ihtiyaç görülen konularda görüş almak üzere bu alandaki uzmanlardan oluşan geçici veya sürekli ihtisas komisyonları oluşturur.\n
+ • Kurumun ihtiyaçları için bina inşa edilmesine, taşınır ve taşınmaz malların satın alınmasına veya kiralanmasına, bunların gerektiğinde satılmasına veya kiraya verilmesine karar verir.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear3"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hukuk Müşavirliği"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• 26/9/2011 tarihli ve 659 sayılı Genel Bütçe Kapsamındaki Kamu İdareleri ve Özel Bütçeli İdarelerde Hukuk Hizmetlerinin Yürütülmesine İlişkin Kanun Hükmünde Kararname hükümlerine göre hukuk birimlerine verilen görevleri yapar.\n
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear4"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Patent Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Patentlerin tescil başvurularının ilgili mevzuat hükümlerine göre kayıt, dosyalama, araştırma, inceleme, değerlendirme ve tescil işlemlerini yapar.\n
+
+• Patentlerin ve patent tescil başvurularının ilgili mevzuat hükümlerine göre lisans, devir, sair değişikliklerle ilgili işlemlerini yapar.\n
+
+• Patentlerin ilan, tasnif ve sicil işlemlerini yapar.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear5"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Markalar Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Markaların tescil başvurularının ilgili mevzuat hükümlerine göre kayıt, dosyalama, araştırma, inceleme, değerlendirme ve tescil işlemlerini yapar.\n
+
+• Markaların ve marka tescil başvurularının ilgili mevzuat hükümlerine göre lisans, devir, sair değişikliklerle ilgili işlemlerini yapar.\n
+
+• Markaların ilan, tasnif ve sicil işlemlerini yapar.\n
+
+• İlgili mevzuat hükümlerine göre, belirli nitelikleri haiz işaret ve ibarelerin koruma altına alınması, markaların tanınmışlık düzeyleri ile ilgili esasların belirlenmesi ve uygulamaya konulması işlemlerini yapar.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear6"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tasarımlar Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Tasarımların tescil başvurularının ilgili mevzuat hükümlerine göre kayıt, dosyalama, araştırma, inceleme, değerlendirme ve tescil işlemlerini yapar.\n
+
+• Tasarımların ve tasarım başvurularının ilgili mevzuat hükümlerine göre lisans, devir ve sair değişikliklerle ilgili işlemlerini yapar.\n
+
+• Tasarımların ilan, tasnif ve sicil işlemlerini yapar.\n
+
+• Türk Tasarım Danışma Konseyinin sekretaryasını yürütür.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear7"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Coğrafi İşaretler Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Coğrafi işaretler ve geleneksel ürün adlarına ilişkin kayıt, araştırma, inceleme, değerlendirme ve tescil işlemlerini yapar.\n
+
+• Coğrafi işaretler ve geleneksel ürün adlarının ilan ve sicil işlemlerini yapar.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear8"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avrupa Birliği ve Dış İlişkiler Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Avrupa Birliği ile ilgili Kurumun görev alanına giren konularda; müzakerelere ilişkin hazırlıkları yapar, toplantılara katılır, bu konularla ilgili olarak Kurum birimleri arasında koordinasyonu sağlar.\n
+
+• Kurumun görev alanına giren konularda yabancı ülkeler ve uluslararası kuruluşlar ile ilişkilerini yürütür, koordinasyonu sağlar, ikili ve çok taraflı işbirliği anlaşmaları ile bölgesel işbirliği anlaşmalarının ve protokollerinin hazırlanmasına yardımcı olur.\n
+
+• Kurumun görev alanına giren yabancı ülkelerin mevzuatı ile uluslararası anlaşmaları izler, inceler ve yükümlülüklerin yerine getirilmesi için gereken çalışmaları yürütür.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear9"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yeniden İnceleme ve Değerlendirme Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Yeniden İnceleme ve Değerlendirme Dairesi Başkanlığı, sınai mülkiyet hakları ve geleneksel ürün adları ile ilgili işlemlere ilişkin ilgili dairenin nihai olarak almış olduğu kararlara karşı, kararın bildirim tarihinden itibaren iki ay içinde işlemlerin tarafı olan ve karar nedeniyle menfaati etkilenen kişiler tarafından yapılacak itirazların incelenmesi ve değerlendirilmesi işlemlerini doğrudan Kurum Başkanına bağlı olarak yürütür.\
+
+• Yeniden incelenmesi ve değerlendirilmesi talep edilen konuda kararlar, Daire Başkanı başkanlığında, yeniden incelenip değerlendirme yapılacak konuda uzman olan ve itiraza konu Kurum kararında görevli bulunmayan en az iki uzman üyenin katılımı ile oluşturulan Kurul tarafından alınır.\
+
+• Yeniden İnceleme ve Değerlendirme Dairesinin kararları Kurumun nihai kararlarıdır. Bu kararlara karşı, kararın bildirim tarihinden itibaren iki ay içinde Ankara Fikri ve Sınai Haklar Hukuk Mahkemesinde dava açılabilir. Yeniden İnceleme ve Değerlendirme Kurulunun kararlarının iptaline ilişkin ilam kesinleşmedikçe icra edilemez. Bu hüküm ilamın ferileri hakkında da uygulanır. Söz konusu ilamlara ilişkin zamanaşımı süresi kararın kesinleşme tarihinden itibaren başlar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear16"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Personel Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Kurum bünyesinde görev yapan personelin iş akitleri, kadro, terfi, görev, yolluk, sağlık, izin ve benzeri özlük işlemleri ile ilgili hizmetleri yürütür.\n
+
+• Sosyal hizmetler ve hizmet içi eğitim ile ilgili işleri yapar.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear10"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Destek Hizmetleri Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• 10/12/2003 tarihli ve 5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu hükümleri çerçevesinde, kiralama ve satın alma işlerini yürütür; temizlik, güvenlik, aydınlatma, ısınma, onarım, taşıma ve benzeri hizmetleri yapar veya yaptırır.\n
+
+• Genel evrak ve arşiv faaliyetlerini düzenler ve yürütür.\n
+
+• Kurumun taşınır ve taşınmazlarına ilişkin işlemleri ilgili mevzuat çerçevesinde yürütür.\n
+
+• Kurumun sivil savunma ve seferberlik hizmetlerini planlar ve yürütür.\n
+
+• Kütüphane hizmetlerini yürütür.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear11"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yenilik ve Tanıtım Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Sınai mülkiyet haklarından ülke ekonomisi için değer üretmek amacıyla gerçek ve tüzel kişilerin sınai mülkiyete konu olan ya da olabilecek varlıklarını ve kullanım şekillerini tespit etme, ilgili sektörleri takip etme, etüt çalışmaları yapma ve benzeri faaliyetleri yürütür.\n
+
+• Sınai mülkiyet varlıklarının değeri ve ekonomik etkileri konusunda çalışmalar yapar.\n
+
+• Yeni teknolojilerin tespiti, teknoloji transferi işlemlerine aracılık gibi ticarileştirme faaliyetlerini yürütür.\n
+
+• Yenilik destek faaliyetleri sonucunda elde edilen tüm verileri toplar, tasnif eder ve kamunun kullanımına sunar.\n
+
+• Yenilik destek faaliyetleri kapsamına giren konularda danışmanlık hizmeti sunar.\n
+
+• Kurumun görevleri ile ilgili olarak mevzuat, başvuru kılavuzları, broşürler ve sınai mülkiyet hakları konularını içeren belgesel, kavram ve tanıtım filmleri ile her türlü ortamda materyal hazırlar, bunların yayımlanması işlemlerini yürütür.\n
+
+• Sınai mülkiyet haklarının tanıtımına ilişkin hedef ve stratejileri tespit eder, planlamasını yapar ve uygular.\n
+
+• Sınai mülkiyet hakları ile ilgili her türlü eğitim faaliyetleri ile seminer, konferans, sempozyum ve benzeri faaliyetleri düzenler, fuarlara iştirak hazırlıklarını yürütür.\n
+
+• Kurumun bilgi ve doküman birimlerinin faaliyette bulunması için gerekli işbirliği çalışmalarını yürütür.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear12"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bilgi İşlem Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Bilgi teknolojilerini takip ederek Kurumun otomasyon stratejilerini belirler, bilgi güvenliğinin gerektirdiği önlemleri alır, kamu bilişim standartlarına uygun çözümler üretir.\n
+
+• Kurumun bilgi işlem hizmetlerini yürütür.\n
+
+• Kurumun internet sayfaları, elektronik imza ve elektronik belge uygulamaları ile ilgili teknik çalışmaları yapar.\n
+
+• Kurumun hizmetleriyle ilgili bilgileri toplar ve veri tabanları oluşturur.\n
+
+• Kurumun mevcut bilgi işlem altyapısının kurulumu, bakımı, ikmali, geliştirilmesi ve güncellenmesi ile ilgili işleri yürütür, haberleşme güvenliğini sağlar.\n
+
+• Kurum ile dokümantasyon merkezleri ve işbirliği içinde olduğu ulusal ve uluslararası kuruluşlar arasında veri aktarımını sağlar, elektronik haberleşme için gerekli olan teknik koordinasyonu kurar ve geliştirir.\n
+
+• Yurt içi ve yurt dışı kaynaklardan sağlanan sınai mülkiyet haklarına ilişkin bilgileri elektronik ortamda toplar, değerlendirir ve ilgili birimlerin kullanımına sunar.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear13"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Strateji Geliştirme Dairesi Başkanlığı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• 5018 sayılı Kanun, 22/12/2005 tarihli ve 5436 sayılı Kanunun 15 inci maddesi ve diğer mevzuatla strateji geliştirme ve mali hizmetler birimlerine verilen görevleri yapar.\n
+
+• Başkanlıkça verilecek diğer işleri yapar.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear0"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yönetim Kurulu"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginBottom="20px"
+                        android:text="• Yönetim Kurulu, Kurumun en yüksek düzeyde yönetim ve karar organıdır. \n
+• Yönetim Kurulu; Adalet Bakanlığı ile Hazine ve Maliye Bakanlığından birer üye, Sanayi ve Teknoloji Bakanlığının belirleyeceği üç üye, Kurum Başkanı ve bir Başkan Yardımcısı olmak üzere yedi üyeden oluşur.\n
+• Kurumun Başkanı aynı zamanda Yönetim Kurulu Başkanıdır. \n
+• Yönetim Kurulu Başkanı hariç üyelerinin görev süresi üç yıldır. Görev süresi biten üyeler yeniden seçilebilir. Başkan Yardımcısının görevinin sona ermesi halinde Yönetim Kurulu üyeliği de sona erer.\n
+• Başkanın olmadığı hallerde Başkana Başkan Yardımcısı vekâlet eder.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear1"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Türk Patent ve Marka Kurumu’nun Görevleri"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="• Kurumun idarî, malî ve teknik yönden düzenli, verimli ve etkin faaliyette bulunabilmesi için gerekli bütün tedbirleri alır. Kurumun işleyişine etkinlik kazandırmak amacı ile hazırlayacağı yönetmeliklerin Bakanlığın onayı ile yürürlüğe girmesini sağlar\n.
+ • Kurum ile ilgili mevzuatın uygulanmasını sağlar.\n
+ • Kurumun bütçesini onaylar.\n
+ • Hazırlanan faaliyet raporunu ve malî raporu görüşüp karara bağlar.\n
+ • Sınaî mülkiyet hakları ve teknolojik ilerleme konusunda planlar ve yıllık programlar doğrultusunda kısa ve uzun vadeli çalışma programları hazırlar, araştırma konuları tespit eder ve bunları uygulamaya koyar.\n
+ • Kurumun vereceği hizmetler karşılığında alınacak ücret tarifelerini hazırlar ve Sanayi ve Teknoloji Bakanlığının uygun görüşü üzerine uygulamaya koyar.\n
+ • Başkan tarafından yapılacak atama önerilerini karara bağlar.\n
+ • Gerektiğinde Danışma Kurulunu toplantıya çağırır.\n
+ • Danışma Kurulunun tavsiye kararlarını görüşüp karara bağlar.\n
+ • Kurumun görev alanına giren konularda kamuoyunu aydınlatmak ve ilgililerin görüşlerini almak için ulusal ve uluslararası nitelikte seminer, sempozyum, açık oturum, konferans ve benzeri konuların düzenlenmesine karar verir.\n
+ • Sınaî mülkiyet haklarıyla ilgili ihtiyaç görülen konularda görüş almak üzere bu alandaki uzmanlardan oluşan geçici veya sürekli ihtisas komisyonları oluşturur.\n
+ • Kurumun ihtiyaçları için bina inşa edilmesine, taşınır ve taşınmaz malların satın alınmasına veya kiralanmasına, bunların gerektiğinde satılmasına veya kiraya verilmesine karar verir.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>
