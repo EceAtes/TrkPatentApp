@@ -1,9 +1,378 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container3"
+    tools:context=".kurumsal_mevzuat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kurumsal_mevzuat">
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mevzuat"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        ></TextView>
+
+    <ScrollView
+        android:layout_below="@id/title"
+        android:layout_above="@id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150px"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_weight=".5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ulusal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ulusal Mevzuat"
+            android:textColor="@color/pastel_blue"
+            android:fontFamily="@font/sen"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:padding="25px"
+            android:layout_marginTop="10px"
+            ></TextView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mülkiyet"
+            android:layout_below="@+id/ulusal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="6769 sayılı Sınai Mülkiyet Kanunu"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Num4"
+            android:layout_below="@id/mülkiyet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Kurumsal Politikalar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Sınai"
+            android:layout_below="@id/Num4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="6769 Sayılı Sınai Mülkiyet Kanununun Uygulanmasına Dair Yönetmelik"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/markaVekil"
+            android:layout_below="@id/Sınai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="5000 Sayılı Patent ve Marka Vekilliği ile Bazı Düzenlemeler Hakkında Kanun"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entegreDevre"
+            android:layout_below="@id/markaVekil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="5147 Sayılı Entegre Devre Topoğrafyalarının Korunması Hakkında Kanun"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kurulYönetmelik"
+            android:layout_below="@id/entegreDevre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Türk Patent ve Marka Kurumu Yeniden İnceleme ve Değerlendirme Dairesi Kurulları Yönetmeliği"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sicilVeDisiplin"
+            android:layout_below="@id/kurulYönetmelik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Patent vekilliği ve Marka Vekilliği Sınav, Sicil ve Disiplin Yönetmeliği"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/amblem"
+            android:layout_below="@id/sicilVeDisiplin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Coğrafi İşaret ve Geleneksel Ürün Adı Amblem Yönetmeliği"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/şekilGösterir"
+            android:layout_below="@id/amblem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Entegre Devre Topoğrafyalarının Korunması Hakkında Kanunun Uygulama Şeklini Gösterir Yönetmelik"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hizmetTebliğ"
+            android:layout_below="@id/şekilGösterir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Marka Tescil Başvurularına Ait Mal ve Hizmetlerin Sınıflandırılmasına İlişkin Tebliğ"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/çalışanBuluş"
+            android:layout_below="@id/hizmetTebliğ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Çalışan Buluşlarına, Yükseköğretim Kurumlarında Gerçekleştirilen Buluşlara ve Kamu Destekli Projelerde Ortaya Çıkan Buluşlara Dair Yönetmelik"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AvrupaPatent"
+            android:layout_below="@id/çalışanBuluş"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text=" Avrupa Patentlerinin Verilmesi ile İlgili Avrupa Patent Sözleşmesinin Türkiye’de Uygulama Şeklini Gösterir Yönetmelik"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tasarımSınıflandırma"
+            android:layout_below="@id/AvrupaPatent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Tasarım Sınıflandırma Listesi (LOCARNO)"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ücret"
+            android:layout_below="@id/tasarımSınıflandırma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Türk Patent Ve Marka Kurumunca 2022 Yılında Uygulanacak Ücret Tarifesine İlişkin Tebliğ "
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/uluslararası"
+            android:layout_below="@id/ücret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uluslararası Mevzuat"
+            android:textColor="@color/pastel_blue"
+            android:fontFamily="@font/sen"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:padding="25px"
+            android:layout_marginTop="10px"
+            ></TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/patentSınıflandırma"
+            android:layout_below="@id/uluslararası"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="Uluslararası Patent Sınıflandırması (International Patent Classification)"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ortakPatent"
+            android:layout_below="@id/patentSınıflandırma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginEnd="25px"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/circular_button"
+            android:gravity="center"
+            android:padding="50px"
+            android:text="rtak Patent Sınıflandırması (Cooperative Patent Classification)"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_weight="0"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/lighter_dark_blue"
+        app:itemIconTint="@color/red"
+        app:itemTextColor="@color/red"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+</RelativeLayout>

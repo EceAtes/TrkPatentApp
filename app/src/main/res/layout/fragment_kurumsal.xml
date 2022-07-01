@@ -112,7 +112,7 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/organizasyon"
+                android:id="@+id/kurumsal_politikalar"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="left|center_vertical"
@@ -121,7 +121,7 @@
                 android:layout_marginRight="50px"
                 android:layout_marginBottom="50px"
                 android:background="@drawable/circle_button"
-                android:text="Organizasyon"
+                android:text="Kurumsal Politikalar"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="22dp" />
@@ -149,7 +149,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="50px">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/planlar"
@@ -183,46 +184,7 @@
 
         </FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/frameKurumsal5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginBottom="40px"
-            android:orientation="horizontal">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/kurumsal_politikalar"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_gravity="left|center_vertical"
-                android:layout_marginLeft="100px"
-                android:layout_marginTop="50px"
-                android:layout_marginRight="50px"
-                android:layout_marginBottom="50px"
-                android:background="@drawable/circle_button"
-                android:text="Kurumsal Politikalar"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="22dp" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/kurumsal_kimlik"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_gravity="right|center_vertical"
-                android:layout_marginLeft="50px"
-                android:layout_marginTop="50px"
-                android:layout_marginRight="100px"
-                android:layout_marginBottom="50px"
-                android:background="@drawable/circle_button"
-                android:text="Kurumsal Kimlik Kılavuzu"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="22dp" />
-
-        </FrameLayout>
         </LinearLayout>
     </ScrollView>
 

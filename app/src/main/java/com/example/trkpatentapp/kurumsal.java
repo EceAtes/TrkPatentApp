@@ -49,9 +49,6 @@ public class kurumsal extends Fragment{
             case(R.id.danisma) :
                 intent = new Intent(getActivity(), kurumsal_danisma.class);
                 break;
-            case(R.id.organizasyon) :
-                intent = new Intent(getActivity(), kurumsal_organizasyon.class);
-                break;
             case(R.id.mevzuat) :
                 intent = new Intent(getActivity(), kurumsal_mevzuat.class);
                 break;
@@ -64,9 +61,7 @@ public class kurumsal extends Fragment{
             case(R.id.kurumsal_politikalar) :
                 intent = new Intent(getActivity(), kurumsal_politikalar.class);
                 break;
-            case(R.id.kurumsal_kimlik) :
-                intent = new Intent(getActivity(), kurumsal_kimlik.class);
-                break;
+
         }
         if(intent != null)
         startActivity(intent);
