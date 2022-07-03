@@ -1,9 +1,764 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hizmet_yeniden_inceleme">
+    tools:context=".kurumsal_yonetim">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeniden İnceleme ve Değerlendirme"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight=".5"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:text="Bilgilendirme"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Yeniden İnceleme ve Değerlendirme Dairesi Başkanlığı sınai mülkiyet hakları ve geleneksel ürün adları ile ilgili işlemlere ilişkin ilgili dairenin nihai olarak almış olduğu kararlara karşı, kararın bildirim tarihinden itibaren iki ay içinde işlemlerin tarafı olan ve karar nedeniyle menfaati etkilenen kişiler tarafından yapılacak itirazların incelenmesi ve değerlendirilmesi işlemlerini doğrudan Kurum Başkanına bağlı olarak yürütmekle görevlidir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Yeniden İnceleme ve Değerlendirme Dairesi Başkanlığı marka, patent, faydalı model, tasarım, coğrafi işaret ve geleneksel ürün adları ile entegre devre topoğrafyalarına ilişkin kararlara karşı yapılan itirazlar ile tasarım, patent, coğrafi işaret ve geleneksel ürün adlarında yayıma itirazların incelenmesi ile görevlidir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Kurul kararları Kurumun nihai kararı olup, bu kararlara karşı Kurum nezdinde tekrar itiraz edilemez. Kurulun nihai kararlarına karşı, kararın bildiriminden itibaren iki ay içinde Ankara Fikri ve Sınai Haklar Hukuk Mahkemesinde dava açılabilir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_margin="25px"
+                android:background="@drawable/border"
+                android:stretchColumns="3">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:padding="25px"
+                        android:text="Hesap Kodları"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="143dp"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Hizmetin Türü"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:padding="25px"
+                        android:text="2022 Ücretleri (TL)"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:text="5.01.01"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Marka Karara İtiraz Ücreti"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="580"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="5.01.02"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="ECoğrafi İşaret Karara \nİtiraz Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="220"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="5.01.03"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Coğrafi İşaret \nYayıma İtiraz Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="220"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="5.01.04"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Geleneksel Ürün Adı \nKarara İtiraz Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="220"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="5.01.05"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Geleneksel Ürün Adı \nYayıma İtiraz Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="220"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="5.01.06"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Tasarım Tescili Yayıma \nİtiraz Ücreti \n(Her bir tasarım için)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="70"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="5.01.07"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Verilmesi Kararı \nYayıma İtiraz Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.100"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="5.01.08"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Entegre Devre \nTopografyası Karara \nİtiraz Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.130"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight=".5"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:text="Banka Hesap Numaraları"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="left"
+                        android:padding="25px"
+                        android:text="• Kurumumuz tarafından verilen hizmetlerle ilgili Türk Lirası cinsinden ücretler; Ziraat Bankası nezdindeki kurumsal tahsilat hesapları, kredi kartı ve bank kart aracılığıyla tahsil edilmektedir.\n
+
+    • Kurumumuz tarafından verilen hizmetlerle ilgili döviz cinsinden ücretler sadece Ziraat Bankası Bankası nezdindeki döviz hesaplarımız aracılığıyla tahsil edilmektedir.\n
+
+    • EFT ve havale şeklinde yapılan ödemeler kabul edilmemektedir.\n
+
+    • Kurumsal hesaplara yapılacak ödemelerde;\n
+
+            • Ziraat Bankası aracılığıyla yapılacak ödemelerde şubelerde Kurumsal Tahsilat Ekranının, internet bankacılığında ise Ödemeler/Vergiler ve Resmi Kurumlar/Türk Patent ve Marka Kurumu sekmesinin, kullanılması gerekmektedir.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_margin="25px"
+                    android:background="@drawable/border"
+                    android:stretchColumns="7">
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15px"
+                            android:layout_span="1"
+                            android:background="@color/lighter_dark_blue"
+                            android:gravity="center"
+                            android:text="Banka"
+                            android:padding="20px"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15px"
+                            android:layout_span="1"
+                            android:background="@color/lighter_dark_blue"
+                            android:gravity="center"
+                            android:padding="20px"
+                            android:text="Şube\nAdı"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15px"
+                            android:layout_span="1"
+                            android:gravity="center"
+                            android:background="@color/lighter_dark_blue"
+                            android:text="Hesap\nTürü"
+                            android:padding="20px"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15px"
+                            android:layout_span="1"
+                            android:gravity="center"
+                            android:background="@color/lighter_dark_blue"
+                            android:text="Şube\nKodu"
+                            android:padding="20px"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15px"
+                            android:layout_span="1"
+                            android:background="@color/lighter_dark_blue"
+                            android:gravity="center"
+                            android:text="Cinsi"
+                            android:padding="20px"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15px"
+                            android:layout_span="1"
+                            android:background="@color/lighter_dark_blue"
+                            android:text="IBAN"
+                            android:padding="20px"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="69dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15px"
+                            android:layout_span="1"
+                            android:background="@color/lighter_dark_blue"
+                            android:gravity="center"
+                            android:padding="20px"
+                            android:text="SWIFT"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:text="Ziraat\nBankası"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Ankara\nKamu\nKurumsal"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Kurumsal"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="1745"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="TL"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Kurumsal\nTahsilat\nHesabı"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text=" "
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:text="Ziraat\nBankası"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Ankara\nKamu\nKurumsal"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Cari\nHesap"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="1745"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="USD"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="TR42\n0001\n0017\n4534\n2721\n3253\n34 "
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="TCZBTR2A"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:text="Ziraat\nBankası"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Ankara\nKamu\nKurumsal"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Cari\nHesap"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="1745"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="EUR"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="TR15\n0001\n0017\n4534\n2721\n3253\n35"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="TCZBTR2A"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:text="Ziraat\nBankası"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Ankara\nKamu\nKurumsal"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="Cari\nHesap"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="1745"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="CHF"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="TR85\n0001\n0017\n4534\n2721\n3253\n36"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15px"
+                            android:fontFamily="@font/sen"
+                            android:text="TCZBTR2A"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_nav_menu"/>
+
+    </RelativeLayout>
