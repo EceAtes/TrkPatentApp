@@ -11,6 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TürkPatentApp">
         <activity
+            android:name=".hizmet_entegre_devre"
+            android:exported="false" />
+        <activity
+            android:name=".hizmet_yeniden_inceleme"
+            android:exported="false" />
+        <activity
+            android:name=".hizmet_isaret"
+            android:exported="false" />
+        <activity
+            android:name=".hizmet_tasarim"
+            android:exported="false" />
+        <activity
+            android:name=".hizmet_marka"
+            android:exported="false" />
+        <activity
+            android:name=".hizmet_patent"
+            android:exported="false" />
+        <activity
             android:name=".kurumsal_kimlik"
             android:exported="false" />
         <activity
@@ -36,8 +54,8 @@
             android:exported="false" />
         <activity
             android:name=".kurumsal_tarihce"
-            android:label="kurumsal tarihce"
-            android:exported="false" />
+            android:exported="false"
+            android:label="kurumsal tarihce" />
         <activity
             android:name=".giris"
             android:exported="true" />

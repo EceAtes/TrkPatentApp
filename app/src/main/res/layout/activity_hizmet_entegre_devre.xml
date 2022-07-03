@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kurumsal_yonetim">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entegre Devre Topoğrafyaları"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Entegre Devre Topoğrafyasının Tanımı"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Patent, faydalı model, marka, coğrafi işaret, endüstriyel tasarım gibi sınai hakların yanı sıra, Entegre Devre Topoğrafyasının yaratıcısı adına tescil edilmesi işlemleri de Türk Patent ve Marka Kurumu tarafından yürütülmektedir. Entegre Devre ile; elektronik bir işlevi veya bunun gibi diğer işlevleri yerine getirmek üzere tasarlanmış, en az bir aktif elemanı olan ve ara bağlantılarından bir kısmının ya da tümünün bir parça malzeme içerisinde ve/veya üzerinde bir araya getirilmiş ara veya son formdaki bir ürün kastedilmektedir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Entegre Devre Topoğrafyası ile de; entegre Devreyi oluşturan tabakaların üç boyutlu dizilimini gösteren, üretim amacıyla hazırlanmış ve herhangi bir formatta sabitlenmiş görüntüler dizisi olup, her görüntü entegre Devrenin üretiminin herhangi bir aşamasındaki yüzeyinin tamamının veya bir kısmının görünümü olarak ifade edilmektedir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:background="@drawable/border"
+                android:stretchColumns="3"
+                android:layout_margin="25px">
+
+
+                <TableRow> 
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@color/lighter_dark_blue"
+                        android:text="Hesap Kodları"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="1"
+                        android:textStyle="bold"
+                        android:padding="25px"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="143dp"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:layout_marginBottom="25px"
+                        android:padding="25px"
+                        android:text="Hizmetin Türü"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:padding="25px"
+                        android:layout_marginBottom="25px"
+                        android:text="2022 Ücretleri (TL)"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+                    
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="15px"
+                        android:layout_gravity="center"
+                        android:text="1.03.01" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:layout_gravity="center"
+                        android:text="Entegre Devre \nTopoğrafyası \nBaşvuru Ücreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="15px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="780" />
+                </TableRow>
+
+                <TableRow>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.02" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Entegre Devre \nTopoğrafyası \nTescil Belgesi \nDüzenleme Ücreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:layout_gravity="center"
+                        android:text="2.440" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.03" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Entegre Devre \nTopoğrafyası \nZorunlu Lisans \nTalep Ücreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="220" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.04" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Entegre Devre\n Topografyası \nSicil Sureti \nDüzenleme Ücreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="360" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:text="1.03.05" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Entegre Devre \nTopografyası \nTescil Belgesi \nSureti Düzenleme \nÜcreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="360" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.06" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Devir İşlemi Kayıt \nve Yayın Ücreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="905" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.07" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Birleşme, Bölünme \nveya Ayni Sermaye \nKoyma Borcu Gibi \nYapısal Değişikliklere\n İlişkin İşlemi \nKayıt ve Yayın \nÜcreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="930" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.08" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Miras Yoluyla \nİntikal İşlemi \nKayıt ve Yayın \nÜcreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="905" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.09" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Lisans İşlemi \nKayıt ve Yayın \nÜcreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="1.190" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.10" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Rehin İşlemi \nKayıt ve Yayın \nÜcreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="905" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:text="1.03.11" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:textAlignment="center"
+                        android:text="Entegre Devre \nTopoğrafyası Tescil \nBelgesi Yeniden \nDüzenleme Ücreti" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="25px"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sen"
+                        android:text="2.440" />
+                </TableRow>
+
+
+
+            </TableLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/Linear15"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Başvurusunda Bulunabilecek Kişiler"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="45px"
+                        android:layout_marginBottom="20px"
+                        android:text="Türkiye Cumhuriyeti vatandaşları, Türkiye Cumhuriyeti sınırları içinde ikametgâhı olan ve sınaî veya ticarî faaliyette bulunan gerçek ve tüzel kişiler, İlgili uluslararası anlaşmaların hükümleri dahilinde başvuru hakkına sahip kişiler."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="45px"
+                        android:layout_marginBottom="20px"
+                        android:text="Ayrıca, Türkiye Cumhuriyeti uyruğundaki kişilere kanunen veya fiilen Entegre Devre Topoğrafyası koruması tanıyan devletlerin uyruğundaki gerçek ve tüzel kişiler de karşılıklılık ilkesi gözetilerek Türkiye’de bu haktan yararlanabilirler. Türkiye Cumhuriyeti vatandaşlarının Entegre Devre Topoğrafyalarını diğer ülkelerin tescil etmesi veya tescil edileceğinin yazılı olarak bildirmesi karşılıklılık ilkesi olarak kabul edilir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear3"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Koruma Kapsamında Entegre Devre Topoğrafyaları"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Orijinal niteliğe sahip Entegre Devre Topoğrafyaları, Kanun ve Yönetmelikte belirtilen şartların yerine getirilmesi ve Tebliğde belirtilen ücretin ödenmesi kaydıyla, tescil belgesi verilerek korunur. Koruma; Entegre Devre Topoğrafyasının dayandığı içerik, işlem süreci, sistem, teknik veya Topoğrafyanın kendisi dışında Topoğrafyada sabitlenmiş bilgiye uygulanmamaktadır. Bu korumadan yararlanma, yapısında koruma altına alınmış bir Entegre Devre Topoğrafyası
+bulunduran entegre Devrenin, herhangi bir üründe kullanılıp kullanılmamasına bağlı değildir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear4"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Orijinal Entegre Devre Topoğrafyası"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Entegre Devre Topoğrafyasının, tasarlayıcısının kendi fikrî çabası sonucu ortaya çıkmış olması ve tasarlama sırasında Entegre Devre üreticileri ve Entegre Devre Topoğrafyası tasarlayıcıları arasında bilinmiyorsa orijinal sayılmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Bilinen elemanların ve ara bağlantıların düzenlenmesinden oluşan bir Entegre Devre Topoğrafyası, bütün olarak ele alındığında, bir araya getirilmiş şekli bakımından orijinallik şartını taşıyorsa Entegre Devre Topoğrafyası korumasından yararlanmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear5"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Koruma Süresi"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Entegre Devre Topoğrafyasına sağlanan korumanın başlangıcı; Entegre Devre Topoğrafyasının, hak sahibi tarafından veya onun izniyle üçüncü bir kişi tarafından, yurt içinde veya yurt dışında ilk kez ticarî açıdan piyasaya sürüldüğü tarihten itibaren iki yıl içinde başvurunun da yapılmış olması"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="kaydıyla; sözü edilen piyasaya sürülme tarihi veya ticarî açıdan piyasaya sürümün olmadığı hâllerde, başvurunun yapıldığı tarihtir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Başlangıç tarihinden itibaren on yıl olup, bu süre onuncu takvim yılının bitiminde sona ermektedir. Entegre Devre Topoğrafyası gizlilik gerektiren hâller dışında, ticarî olarak kullanılmamışsa ve tasarlandığı tarihten itibaren on beş yıl içerisinde Kuruma tescil için başvurulmamışsa Entegre Devre Topoğrafyasını koruma hakkı talep edilememektedir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear6"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hak Sahipliği"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Entegre Devre Topoğrafyasını koruma hakkı, tasarlayıcısına veya onun hukukî haleflerine aittir. Entegre Devre Topoğrafyasının birden çok kişi tarafından tasarlandığı durumlarda ise aralarında aksine bir sözleşme yoksa, koruma hakkı bu kişiler tarafından müştereken kullanılmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear7"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="20px"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Entegre Devre Topoğrafyası Belgesinin Sahibine Sağladıkları"
+                        android:padding="25px"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/sen"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="Bir Entegre Devre Topoğrafyası hak sahibi, izni dışında yapılan aşağıdaki fiilleri önleme yetkisine sahiptir:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="a) Orijinal olma şartlarını haiz bulunmayan parçaların çoğaltılması hariç olmak üzere, koruma altındaki Entegre Devre Topoğrafyasının bütününün veya bir kısmının, bir Entegre Devre içine alınması ya da bunun dışında herhangi bir şekilde çoğaltılması."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:gravity="left"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:text="b) Korunan bir Entegre Devre Topoğrafyasının, korunan Entegre Devre Topoğrafyasını içeren bir entegre Devrenin ya da yasal olmayan bir biçimde çoğaltılmış Entegre Devre Topoğrafyasını içeren ürünün ithali, satışı veya ticarî amaçlı dağıtılması."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>
