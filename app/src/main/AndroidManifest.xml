@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TürkPatentApp">
         <activity
+            android:name=".hizmet_marka_gelenekselOlmayan"
+            android:exported="false" />
+        <activity
+            android:name=".hizmet_marka_ozel"
+            android:exported="false" />
+        <activity
+            android:name=".hizmet_marka_NICE"
+            android:exported="false" />
+        <activity
             android:name=".hizmet_entegre_devre"
             android:exported="false" />
         <activity

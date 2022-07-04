@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hizmet_marka_NICE">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geleneksel Olmayan Marka Türleri"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Geleneksel olmayan marka türleri için yapılacak başvurulara ilişkin usul ve esaslar Yönetmeliğin 7. maddesinde düzenlenmiştir. Aşağıda geleneksel olmayan marka türleri için yapılacak başvurularda dikkat edilmesi gereken hususlar hakkında özet bilgiler yer almaktadır:"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="Ses Markaları:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Bir işaretin ses markası olarak tescilinin talep edildiği hallerde, talebin başvuru formunda açıkça belirtilmesi ve işaretin elektronik ortamda dinlemeye ve saklamaya elverişli kaydının Kuruma sunulması gerekmektedir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Ses markası başvurularında, işaretin nota ile gösteriminin sunulması zorunlu değildir. Ancak işaretin nota ile gösteriminin mümkün olduğu hallerde, bu gösterim de başvuruyla birlikte sunulabilir. Her bir ses markası başvurusu için sadece bir adet ses kaydı sunulabilir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="Üç Boyutlu Markalar:"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Bir işaretin üç boyutlu marka olarak tescilinin talep edildiği hallerde, talebin başvuru formunda açıkça belirtilmesi ve koruma konusunun açık ve kesin olarak anlaşılmasını sağlayacak şekilde işaretin, tek bir yönden veya farklı açılardan görünümünü içeren gösterimlerinin Kuruma sunulması gerekmektedir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Üç boyutlu gösterimlerin en fazla altı farklı açıdan görünümü içerecek ve üç boyutlu markanın bütünlüğünü bozmayacak nitelikte olması gerekir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="Renk Markaları:"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Bir işaretin renk markası olarak tescilinin talep edildiği hallerde, talebin başvuru formunda açıkça belirtilmesi, işareti oluşturan renk görselinin sunulması ve Kurum tarafından geçerliliği kabul edilen renk kodunun belirtilmesi başvuruda belirtilmesi gerekmektedir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Başvuruya konu renge ilişkin Kurum tarafından geçerli kabul edilen kodlar https://www.pantone.com/color-finder linki üzerinden yapılacak sorgu sonucu elde edilen renk kodlarıdır."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Renk veya renklerin somutlaşmış, sınırları belli bir şekil, figür, resim veya kelime gibi unsurlar dâhilinde kullanılması durumunda işaret, renk markası olarak değerlendirilmez ve bu tür marka başvuruları, Yönetmeliğin 7. maddesinin birinci fıkrası çerçevesinde değerlendirilir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="Hareket Markaları: "
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text=" Bir işaretin hareket markası olarak tescilinin talep edildiği hallerde, talebin başvuru formunda açıkça belirtilmesi ve işareti oluşturan hareketi tasvir eden bir görüntünün veya hareketsiz ya da hareketli görüntü dizisinin Kuruma sunulması gerekmektedir. Gösterimler, hareket markasının bütünlüğünü bozmayacak nitelikte olmalıdır."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

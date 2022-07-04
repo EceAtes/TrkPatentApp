@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hizmet_marka_NICE">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marka (NICE) Sınıflandırma"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight=".5"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:text="NICE Sınıflandırma Listesi"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="“Bu linkten Dünya Fikri Mülkiyet Teşkilatı (WIPO) tarafından yayımlanan Nice Sınıflandırmasının son baskısına İngilizce, Fransızca ve İspanyolca dillerinde ulaşabilirsiniz. Site üzerinden Nice Sınıflandırmasının önceki baskılarına ulaşılması da mümkündür.”"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/NICEListe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="https://www.wipo.int/classifications/nice/nclpub/en/fr/"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/NICEBelge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="İlgili belgeler için tıklayınız"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="Madrid Mal ve Hizmet Yöneticisi (Madrid Goods and Services Manager / MGS)"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="MGS, WIPO tarafından oluşturulan, Markaların Tescili Amacıyla Mal ve Hizmetlerin Uluslararası Sınıflandırılmasına İlişkin Nice Anlaşması uyarınca Nice Sınıflandırmasının son baskısına uygun bir şekilde sınıflandırılmış 119,000’den fazla İngilizce adlandırma içeren ve veritabanından seçilmiş mal ve hizmet listelerini Türkçe dahil 25 dile çeviri yapmaya imkan veren Madrid sisteminin çevrimiçi aracıdır. Bu linkten sadece İngilizce değil, sitenin sağ üstünde yer alan dil seçeneği ile Türkçe ve diğer dillerde de mal ve hizmet araştırması yapabilirsiniz."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/madrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="http://www.wipo.int/mgs/index.jsp?lang=en"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="TMCLASS Uygulaması"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="TMCLASS, EUIPO tarafından oluşturulan ve marka tescil başvurularında kullanılan mal ve hizmetlerin Nice Sınıflandırmasına göre hangi sınıf altında yer aldığını, bu mal ve hizmetlerin uygulamaya katılım sağlayan Ofislerin sınıflandırma listelerinde yer alıp almadığını gösteren ve Türkçe dahil 40 dile çeviri imkanı tanıyan çevrimiçi bir uygulamadır. Sitenin sağ üstünde yer alan dil seçeneği ile Türkçe ve diğer dillerde de mal ve hizmet araştırması yapabilirsiniz."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tmclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="http://tmclass.tmdn.org/ec2/?lang=en"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

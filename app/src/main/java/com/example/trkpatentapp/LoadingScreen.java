@@ -27,7 +27,7 @@ public class LoadingScreen extends AppCompatActivity {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(LoadingScreen.this, kurumsal_tarihce.class));
+                startActivity(new Intent(LoadingScreen.this, MainActivity.class));
                 finish();
             }
         },2000);

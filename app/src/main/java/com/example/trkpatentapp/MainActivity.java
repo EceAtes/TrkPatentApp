@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+/*
         BottomNavigationView nav = findViewById(R.id.nav_view);
         nav.setSelectedItemId(R.id.navigation_home);
         if (Build.VERSION.SDK_INT >= 21) {
@@ -148,6 +148,6 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 };
-
-
+*/
+    }
 }

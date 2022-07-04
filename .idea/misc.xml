@@ -12,6 +12,11 @@
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_danisma.xml" value="0.28804960541149943" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_fragment_giris.xml" value="0.2509057971014493" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_hizmet_entegre_devre.xml" value="0.2041522491349481" />
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_hizmet_marka.xml" value="0.1" />
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_hizmet_marka_geleneksel_olmayan.xml" value="0.1" />
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_hizmet_marka_nice.xml" value="0.3393177737881508" />
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_hizmet_marka_ozel.xml" value="0.1" />
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_hizmet_patent.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_hizmet_yeniden_inceleme.xml" value="0.4" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_kurumsal_etik.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_kurumsal_hakkimizda.xml" value="0.264" />
@@ -22,7 +27,7 @@
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_kurumsal_politikalar.xml" value="0.1" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_kurumsal_yonetim.xml" value="0.2" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_loading_screen.xml" value="0.176" />
-        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_main_page.xml" value="0.20199275362318841" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/activity_tarihce.xml" value="0.31640866873065016" />
         <entry key="..\:/Users/eceat/AndroidStudioProjects/TrkPatentApp/app/src/main/res/layout/fragment_.xml" value="0.1" />

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hizmet_marka_NICE">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Özel Korunan Markalar"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Özel korunan markalar; Tanınmış Markalar, WIPO Koruması ve Türk Koruması olarak üç ana başlık altında değerlendirilebilir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="I-Tanınmış markalar (1):"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Tanınmış markaların, ulusal veya uluslararası düzenlemelerde yapılmış pek çok tanımı mevcuttur. Zira, tanınmışlık her somut olayda farklılık gösteren, önceden belirlenmiş kriterlere uymayan ve zamanla değişen bir olgudur."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Genel olarak tanınmış markalar “bir kişiye veya girişime sıkı bir biçimde bağlılık, güvence, kalite, reklam gücü, yaygın bir dağıtım ağına bağlı, müşteri ve diğer sübjektif ilgi ve ilişkiler ayrımı yapılmadan coğrafi sınır, kültür ve yaş farkı gözetilmeksizin aynı çevredekilerce refleks halinde beliren bir çağrışım” şeklinde tanımlanabilir."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Araştırma bölümünde tanınmış marka koruma tipini seçerek araştırma yapıldığında Türkiye’de tanınmış marka statüsündeki markaları listeleyebilirsiniz."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="(1) Paris Sözleşmesinin 1 inci mükerrer 6'ncı maddesi kapsamındaki tanınmış markalar (556 sayılı KHK’nın 7/1(i) maddesi kapsamında korunan markalar)."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="II-WIPO Koruması (2):"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="WIPO aracılığıyla TÜRKPATENT’ye gönderilmiş olan, garanti ve kontrol işlevi gören işaretler veya resmi kurum ve organizasyonlara ait işaretler bu kapsamdadır. Örneğin OECD, IMF, WTO ibareleri bu kapsamda korunmaktadır."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tmclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="2) Paris Sözleşmesinin 2 inci mükerrer 6'ncı maddesi kapsamında (556 sayılı KHK’nın 7/(g) maddesi) korunan markalardan oluşmaktadır."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="III-Türk Koruması (3):"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Türkiye Cumhuriyeti Devleti’nin hükümranlığı ile ilgili işaretler, devlet tarafından resmi kontrol ve garanti işareti olarak kabul edilmiş işaret ve adlandırmalar; devlete, mahalli idarelere ve diğer kamu tüzel kişilerine ait iktisadi nitelik arz etmeyen işaret ve adlandırmalar; ticaret ve hizmet markası olarak tescil edilemeyecek nitelikteki kamu kurumu niteliğindeki meslek kuruluşlarına ait işaret ve adlandırmalar; Bakanlar Kurulu kararı ile kamu yararına çalışır durumda bulunan derneklere ait işaret ve adlandırmalar; kamu yararı açısından korunması gereken diğer işaretler (siyasi parti amblemleri gibi) bu kapsamda korunmaktadır."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="(3) 556 sayılı KHK’nın 7/(g) , 7/ (h) ve 7/(k) maddeleri kapsamında korunan markalardan oluşmaktadır."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:layout_weight=".5"
+                android:background="@drawable/circular_button"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:fontFamily="@font/sen"
+                    android:padding="25px"
+                    android:text="İlgili Linkler :"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Markaların Tanınmışlık Düzeyleri İle İlgili Esaslar ve Uygulama Kriterleri"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Koruma Markalarına İlişkin Başkanlık Makamı Olur Özeti"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="20px"
+                    android:fontFamily="@font/sen"
+                    android:gravity="center"
+                    android:padding="25px"
+                    android:text="Paris Sözleşmesi"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>
