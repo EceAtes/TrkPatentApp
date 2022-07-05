@@ -91,7 +91,7 @@ public class hizmet_tasarim extends AppCompatActivity {
 
         //////////////////////////////////////////////////
 
-        TextView txt1 = (TextView) findViewById(R.id.tasarımBelgeler);
+        TextView txt1 = (TextView) findViewById(R.id.başvuru);
 
         // this is the text we'll be operating on
         SpannableString text1 = new SpannableString("Tasarım Başvuru Ücreti Hesaplama belgesi için tıklayınız");

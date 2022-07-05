@@ -404,7 +404,7 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="15px"
                         android:fontFamily="@font/sen"
-                        android:text="Tasarım Tescil Başvuru Ücreti"
+                        android:text="Tasarım Tescil\nBaşvuru Ücreti"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
 
@@ -432,7 +432,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="İlave Her Tasarım İçin Tasarım Tescil Başvuru Ücreti"
+                        android:text="İlave Her\nTasarım İçin\nTasarım Tescil\nBaşvuru Ücreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -458,7 +458,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Yayım Ücreti ( Her bir 8 x 8 cm.Alan İçin)"
+                        android:text="Yayım Ücreti\n( Her bir 8 x 8 cm.Alan İçin)"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -484,7 +484,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Yayım Erteleme Talebi Ücreti (Her Bir Tasarım İçin)"
+                        android:text="Yayım Erteleme\nTalebi Ücreti\n(Her Bir Tasarım İçin)"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -510,7 +510,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Yenileme Başvuru Ücreti (Tek Tasarım İçin)"
+                        android:text="Yenileme\nBaşvuru Ücreti\n(Tek Tasarım İçin)"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -536,7 +536,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Yenileme Başvuru Ücreti (İlave Her Bir Tasarım İçin)"
+                        android:text="Yenileme\nBaşvuru Ücreti\n(İlave Her Bir Tasarım İçin)"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -562,7 +562,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="6 Ay Süre Uzatımı ile Yenileme Başvuru Ücreti (Tek Tasarım İçin)"
+                        android:text="6 Ay Süre\nUzatımı ile Yenileme\nBaşvuru Ücreti\n(Tek Tasarım İçin)"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -588,7 +588,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="6 Ay Süre Uzatımı ile Yenileme Başvuru Ücreti (İlave Her Bir Tasarım İçin)"
+                        android:text="6 Ay Süre\nUzatımı ile Yenileme\nBaşvuru Ücreti\n(İlave Her Bir Tasarım İçin)"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -614,7 +614,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Devir İşlemi Kayıt Ücreti"
+                        android:text="Devir İşlemi\nKayıt Ücreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -640,7 +640,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Lisans Kayıt ve Lisans Yenileme Ücreti"
+                        android:text="Lisans Kayıt ve\nLisans Yenileme\nÜcreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -666,7 +666,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Miras Yoluyla İntikal İşlemi Kayıt Ücreti"
+                        android:text="Miras Yoluyla\nİntikal İşlemi\nKayıt Ücreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -692,7 +692,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Rehin İşlemleri Kayıt ve Yayım Ücreti"
+                        android:text="Rehin İşlemleri\nKayıt ve Yayım\nÜcreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -718,7 +718,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Birleşme, Bölünme veya Ayni Sermaye Koyma Borcu Gibi Yapısal Değişikliklere İlişkin İşlem Ücreti"
+                        android:text="Birleşme, Bölünme\nveya Ayni Sermaye\nKoyma Borcu Gibi\nYapısal Değişikliklere\nİlişkin İşlem Ücreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -744,7 +744,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Rüçhan Hakkı Kayıt Ücreti"
+                        android:text="Rüçhan Hakkı\nKayıt Ücreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -770,7 +770,7 @@
                     <TextView
                         android:layout_marginBottom="25px"
                         android:fontFamily="@font/sen"
-                        android:text="Tescil Belgesi Sureti veya Sicil Sureti Düzenleme Ücreti"
+                        android:text="Tescil Belgesi\nSureti veya Sicil\nSureti Düzenleme\nÜcreti"
                         android:textAlignment="center"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
@@ -813,7 +813,9 @@
                 <TableRow>
 
                     <TextView
+                        android:id="@+id/başvuru"
                         android:layout_gravity="center"
+                        android:layout_marginTop="25px"
                         android:layout_marginBottom="25px"
                         android:text="Tasarım Başvuru Ücreti Hesaplama belgesi için tıklayınız"
                         android:textColor="@color/blue"
