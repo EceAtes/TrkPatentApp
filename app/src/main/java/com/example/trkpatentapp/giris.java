@@ -17,9 +17,9 @@ public class giris extends Fragment{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_iletisim, container, false);
+        View view = inflater.inflate(R.layout.fragment_giris, container, false);
 
-/*
+
         Button başvuruPatent = (Button) view.findViewById(R.id.başvuruPatent1);
         başvuruPatent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +98,7 @@ public class giris extends Fragment{
                 Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                 startActivity(launchBrowser);
             }
-        });*/
+        });
         return inflater.inflate(R.layout.fragment_giris, container, false);
     }
 }

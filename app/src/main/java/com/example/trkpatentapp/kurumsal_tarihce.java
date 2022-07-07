@@ -10,10 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class kurumsal_tarihce extends Fragment {
-    @Nullable
+public class kurumsal_tarihce extends AppCompatActivity {
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_tarihce, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tarihce);
     }
 }

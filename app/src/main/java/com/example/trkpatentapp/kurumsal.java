@@ -30,41 +30,71 @@ public class kurumsal extends Fragment{
                 startActivity(launchBrowser);
             }
         });
+        
+        Button tarihçe = view.findViewById(R.id.tarihce);
+        tarihçe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), kurumsal_tarihce.class);
+                startActivity(intent);
+            }
+        });
 
+        Button hakkımızda = view.findViewById(R.id.hakkimizda);
+        hakkımızda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), kurumsal_hakkimizda.class);
+                startActivity(intent);
+            }
+        });
+
+        Button danisma = view.findViewById(R.id.danisma);
+        danisma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), kurumsal_danisma.class);
+                startActivity(intent);
+            }
+        });
+
+        Button yonetim = view.findViewById(R.id.yonetim);
+        yonetim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), kurumsal_yonetim.class);
+                startActivity(intent);
+            }
+        });
+
+        Button kurumsal_politikalar = view.findViewById(R.id.kurumsal_politikalar);
+        kurumsal_politikalar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), kurumsal_yonetim.class);
+                startActivity(intent);
+            }
+        });
+
+        Button planlar = view.findViewById(R.id.planlar);
+        planlar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), kurumsal_planlar.class);
+                startActivity(intent);
+            }
+        });
+
+        Button etik = view.findViewById(R.id.etik);
+        etik.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), kurumsal_etik.class);
+                startActivity(intent);
+            }
+        });
+        
         return view;
     }
-
-    public void onClick(View v) {
-        Intent intent = null;
-        switch(v.getId()){
-            case(R.id.tarihce):
-                intent = new Intent(getActivity(), kurumsal_tarihce.class);
-                break;
-            case(R.id.hakkimizda) :
-                intent = new Intent(getActivity(), kurumsal_hakkimizda.class);
-                break;
-            case(R.id.yonetim) :
-                intent = new Intent(getActivity(), kurumsal_yonetim.class);
-                break;
-            case(R.id.danisma) :
-                intent = new Intent(getActivity(), kurumsal_danisma.class);
-                break;
-            case(R.id.mevzuat) :
-                intent = new Intent(getActivity(), kurumsal_mevzuat.class);
-                break;
-            case(R.id.planlar) :
-                intent = new Intent(getActivity(), kurumsal_planlar.class);
-                break;
-            case(R.id.etik) :
-                intent = new Intent(getActivity(), kurumsal_etik.class);
-                break;
-            case(R.id.kurumsal_politikalar) :
-                intent = new Intent(getActivity(), kurumsal_politikalar.class);
-                break;
-
-        }
-        if(intent != null)
-        startActivity(intent);
-    }
-
+    
 }

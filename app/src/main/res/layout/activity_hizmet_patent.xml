@@ -1,9 +1,3261 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hizmet_patent">
+    tools:context=".kurumsal_yonetim">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patent ve Faydalı Model"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:padding="20px"
+        android:layout_alignParentTop="true"
+        android:background="@color/lighter_dark_blue"
+
+        ></TextView>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="150px">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight=".5"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:text="Patent Sınıflandırması"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Patent sınıflandırması, tekniğin bilinen durumu araştırılırken önceki tarihli patent dökümanlarının tespit edilebilmesi için vazgeçilmezdir. Tekniğin bilinen durumuna erişim, patent ofisleri, potansiyel mucitler, araştırma ve geliştirme birimleri ve teknolojinin uygulanması veya geliştirilmesi ile ilgilenen diğer kişiler tarafından gereklidir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Sınıflandırma sistemi sayesinde patent bilgilerinin teknik alanlara göre ayrılmış bir şekilde sunulmasıyla teknik bilgiye ulaşmak kolaylaşmaktadır. Ayrıca, teknolojinin belirli bir alanında tekniğin bilinen durumunun araştırılması ve çeşitli alanlardaki teknolojik gelişmenin değerlendirmesini yapabilmek için patent istatistiklerinin hazırlanması mümkün olmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Belgelere ulaşmak için tıklayınız"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight=".5"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:text="IPC, Uluslararası Patent Sınıflandırması (International Patent Classification)"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Ülkemizin de taraf olduğu Strasburg Anlaşması* ile oluşturulan Uluslararası Patent Sınıflandırması (IPC), patentlerin ve faydalı modellerin, teknolojinin farklı alanlarına göre sınıflandırılması için, farklı dillerdeki kelimelerden bağımsız bir şekilde sembollerden oluşan hiyerarşik bir sistem sağlamaktadır. Böylece, farklı ulusal patent sınıflandırma sistemlerinin kullanımıyla oluşabilecek karışıklık engellenmekte ve patent dokümanları tek ve aynı şekilde sınıflandırılmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="IPC, teknolojiyi yaklaşık 70.000 alt grup içeren sekiz bölüme (A-H) ayırmakta ve her bir alt grupta, rakamlar ve harflerden oluşan bir sembol bulunmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Her bir patent dokümanında, buluşun ilgili olduğu alana ait uygun IPC sembolleri yer almaktadır. IPC sembolleri, patent dokümanını yayınlayan ulusal veya bölgesel patent ofisleri tarafından verilmekte, PCT belgeleri için ise, IPC sembolleri Uluslararası Araştırma Otoritesi (ISA) tarafından verilmektedir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="IPC sürekli gözden geçirilerek teknolojik gelişmeye uygun olacak şekilde güncel tutulmakta ve düzenli olarak yeni bir versiyonu yayınlanmaktadır. IPC'nin şu andaki ve daha önceki orijinal versiyonları, İngilizce ve Fransızca dillerinde mevcuttur. IPC'nin revizyonu IPC Uzmanlar Komitesi tarafından gerçekleştirilmektedir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="100’den fazla ulusal ve bölgesel patent Ofisi tarafından IPC etkin bir şekilde kullanılmaktadır. IPC’ye aşağıdaki linkten ulaşılabilinir:\n
+
+http://www.wipo.int/classifications/ipc/ipcpub"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="*01.06.2018 tarihi itibariyle 62 ülke Strasburg Anlaşması’na üyedir. Türkiye 12.7.1995 tarih ve 95/7094 sayılı Bakanlar Kurulu Kararı ile bu Anlaşma’ya katılmış ve Anlaşma 1 Ekim 1996 tarihinde yürürlüğe girmiştir."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight=".5"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:text="CPC, Ortak Patent Sınıflandırması (Cooperative Patent Classification)"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="1 Ocak 2013 tarihinde yürürlüğe giren Ortak Patent Sınıflandırması (CPC), ABD Patent ve Marka Ofisi (USPTO) ile Avrupa Patent Ofisi (EPO) arasında kendi mevcut sınıflandırma sistemlerini uyumlu hale getirmeyi kararlaştırdıkları ortak bir işbirliği olarak başlatılmıştır. Bu iki Ofis tarafından geliştirilmiş olan CPC, büyük ölçüde EPO’nun Avrupa Sınıflandırma Sistemi’ne (ECLA) dayanmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="CPC, IPC ile aynı sekiz bölümün (A-H) yanısıra, yeni veya birkaç bölümü bir arada kapsayan teknolojilerin etiketlenmesi için ayrı bir “Y” bölümünü de içerir. CPC sembolleri, IPC sembollerinin bir uzantısı olarak teknolojiyi yaklaşık 250.000 alt grupta daha detaylı bir şekilde sınıflandırmaktadır."
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="CPC’ye aşağıdaki linkten ulaşılabilinir:\N
+https://worldwide.espacenet.com/classification"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_margin="25px"
+                android:background="@drawable/border"
+                android:stretchColumns="3">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:padding="25px"
+                        android:text="Hesap Kodları"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="143dp"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:gravity="center"
+                        android:padding="25px"
+                        android:text="Hizmetin Türü"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:padding="25px"
+                        android:gravity="center"
+                        android:text="Ücretler (TL)"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="15px"
+                        android:text="Patent"
+                        android:layout_span="3"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:text="1.01.01"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Başvuru\nÜcreti"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="75"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.02"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Rüçhan Hakkı\nTalebi Ücreti\n(Her Bir\nRüçhan İçin)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="160"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.03"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Avrupa Patentinin\nİtiraz veya\nKısıtlama İşlemi\nSonucu Değişen\nFasikül Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.935"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.04"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Avrupa Patent\nBaşvurusunun veya\nAvrupa Patentinin\nDüzeltilmiş Türkçe\nÇevirisinin Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.470"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.06"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ek Süre\nTalebi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="170"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.07"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Rüçhan Hakkı\nBelgesi Düzenleme\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="400"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.08"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Belgesi\nDüzenleme Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.09"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ek Patent\nBelgesi Düzenleme\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.10"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Devir İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="905"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.11"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Lisans İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="360"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.12"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Birleşme, Bölünme\nveya Ayni Sermaye\nKoyma Borcu Gibi\nYapısal Değişikliklere\nİlişkin İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="930"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.13"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Lisans Verme\nTeklifi Kayıt\nve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="50"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.14"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Miras Yoluyla\nİntikal İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="905"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.15"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Rehin/Teminat İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="905"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.17"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Belgesi\nOnaylı Sureti\nDüzenleme Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="410"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.18"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Dosyası\nYerinde İnceleme\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="30"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.19"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Başvurusunun\nFaydalı Model\nBaşvurusuna Değiştirilmesi\nTalebi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="95"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.20"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Mücbir Sebep\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ödenmesi gereken\nyıllık ücret\n+ (Ödenmesi gereken\nyıllık ücret - harç)\nın %50’si"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.21"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Vadesinde Ödenmeyen\nYıllık Ücret"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ödenmesi gereken\nyıllık ücret +\n(Ödenmesi gereken\nyıllık ücret - harç)\nın %25’i"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.22"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="530"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.23"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.24"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="4.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="640"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.25"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="5.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="950"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.26"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="6.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.080"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.27"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="7.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.205"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.28"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="8.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.350"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.29"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="9.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.470"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.30"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="10.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.610"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.31"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="11.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.830"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.32"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="12.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.130"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.33"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="13.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.460"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.34"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="14.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.785"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.35"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="15.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.210"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.36"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="16.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.510"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.37"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="17.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.900"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.38"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="18.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="4.170"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.39"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="19.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="4.400"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.40"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="20.Yıl Sicil\nKayıt Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="4.590"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.41"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent İşbirliği\nAntlaşması Kapsamında\nUlusal Aşamaya\nGiren Başvurunun\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.020"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.42"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent İşbirliği\nAntlaşması Kapsamında\nUlusal Aşamaya\nGiren Başvurunun\nYapılması İçin\nEk Süre Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.530"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.43"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent İşbirliği\nAntlaşması Kapsamında\nKabul Ofisi\nOlarak Yapılan\nBaşvurular İçin\nRüçhan\nHakkı Belgesi\nDüzenleme Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="30 CHF"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.44"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Avrupa Patenti\nBaşvurusu İstemlerinin\nYayım Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.895"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.45"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Avrupa Patenti\nFasikül Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="4.640"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.46"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Avrupa Patenti\nFasikülü Türkçe\nÇevirisi İçin\nEk Süre Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.625"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.47"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent İşbirliği\nAntlaşması Kapsamında\nBaşvuru Yapma\nHakkının Tesisi\nİçin Verilen\nEk Süre Ücreti\n(33 Aydan Sonra\nUlusal Safhaya Giren\nBaşvurular İçin)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="5.205"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.48"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Araştırma Raporu\nDüzenlenmesi Ücreti\n(Gerçek Kişiler\nİçin 10, Üniversiteler\nİçin 100\nBaşvuruya Kadar)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.49"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Araştırma Raporu\nDüzenlenmesi Ücreti\n(1.01.48 Sayılı\nSatır Haricindeki\nBaşvurular İçin)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.100"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.50"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="İnceleme Raporu\nDüzenlenmesi Ücreti\n(Gerçek Kişiler İçin\n10, Üniversiteler\nİçin 100\nBaşvuruya Kadar)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.51"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="İnceleme Raporu\nDüzenlenmesi Ücreti\n(1.01.50 Sayılı\nSatır Haricindeki\nBaşvurular İçin)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.100"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.54"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2. ve 3. İnceleme\nRaporu Düzenlenmesi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.56"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Faydalı Model\nBaşvurusunun Patent\nBaşvurusuna Dönüştürülmesi\nTalebi için\nAraştırma Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="670"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.57"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Hakların Yeniden\nTesisi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.550"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.58"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="İşlemlerin Devam\nEttirilmesi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="890"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.59"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Yıllık Ücret\nİçin Telafi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ödenmesi gereken\nyıllık ücretin\n1,5 katı"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.01.60"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Yayımlanmış Patent\nBaşvuruları veya\nPatentler için\nSicil Sureti\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="70"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="Patent Ücret Tablosu ve  PCT Başvuru Ücreti belgeleri için tıklayınız"
+                        android:layout_span="3"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="15px"
+                        android:text="Faydalı Model"
+                        android:layout_span="3"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:text="1.02.01"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Faydalı Model\nBaşvuru Ücreti"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="75"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.02"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Rüçhan Hakkı\nTalebi Ücreti\n(Her Bir\nRüçhan İçin)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="160"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.03"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ek Süre\nTalebi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="170"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.04"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Rüçhan Hakkı\nBelgesi Düzenleme\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="400"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.05"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Faydalı Model\nBelgesi Düzenleme\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.06"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Devir İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="905"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.07"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Lisans İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="360"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.08"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Birleşme, Bölünme\nveya Ayni Sermaye\nKoyma Borcu Gibi\nYapısal Değişikliklere\nİlişkin İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="930"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.09"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Lisans Verme\nTeklifi Kayıt\nve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="50"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.10"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Miras Yoluyla\nİntikal İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="905"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.11"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Rehin/Teminat İşlemi\nKayıt ve Yayım\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="905"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.12"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Faydalı Model\nBelgesi Onaylı\nSureti Düzenleme\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="410"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.13"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Faydalı Model\nDosyası Yerinde\nİnceleme Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="30"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.14"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Faydalı Model\nBaşvurusunun Patent\nBaşvurusuna Değiştirilmesi\nTalebi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="95"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.15"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Mücbir Sebep\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ödenmesi gereken\nyıllık ücret+\n(Ödenmesi gereken\nyıllık Ücret - Harç)\nın %50'si"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.16"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Vadesinde Ödenmeyen\nYıllık Ücret"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ödenmesi gereken\nyıllık ücret+\n(Ödenmesi gereken\nyıllık Ücret - Harç)\nın %25'i"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.17"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="410"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.18"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="420"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.19"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="4.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="500"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.20"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="5.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="720"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.21"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="6.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="830"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.22"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="7.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="930"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.23"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="8.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.010"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.24"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="9.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.110"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.25"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="10.Yıl Sicil\nKayıt İşlemi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.220"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.26"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Hakların Yeniden\nTesisi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.550"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.27"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="İşlemlerin Devam\nEttirilmesi Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="890"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.28"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent Başvurusunun\nFaydalı Model\nBaşvurusuna Dönüştürülmesi\nTalebi İçin\nAraştırma Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="670"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.29"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Yıllık Ücret\nİçin Telafi\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ödenmesi gereken yıllık ücretin 1,5 katı"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.30"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Araştırma Raporu\nDüzenlenmesi Ücreti\n(Gerçek Kişiler\nİçin 10, Üniversiteler\nİçin 100\nBaşvuruya Kadar)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="540"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.31"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Araştırma Raporu\nDüzenlenmesi Ücreti\n(1.02.30 Sayılı\nSatır Haricindeki\nBaşvurular İçin)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.100"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.32"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent İşbirliği\nAntlaşması Kapsamında\nUlusal Aşamaya\nFaydalı Model\nOlarak Giren\nBaşvurunun Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="2.250"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.33"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent İşbirliği\nAntlaşması Kapsamında\nUlusal Aşamaya\nFaydalı Model\nOlarak Giren\nBaşvurunun Yapılması İçin Ek Süre Ücreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="1.140"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.34"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Patent İşbirliği\nAntlaşması Kapsamında\nUlusal Aşamaya\nGirişte Faydalı\nModel Olarak\nBaşvuru Yapma\nHakkının Tesisi\nİçin Verilen\nEk Süre Ücreti\n(33 Aydan Sonra\nUlusal Safhaya\nGiren Başvurular\nİçin)"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="3.880"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:text="1.02.35"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="Yayımlanmış Faydalı\nModel Başvuruları\nveya Faydalı\nModeller İçin\nSicil Sureti\nÜcreti"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="25px"
+                        android:fontFamily="@font/sen"
+                        android:text="70"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25px"
+                        android:layout_marginBottom="25px"
+                        android:layout_span="3"
+                        android:text="Faydalı Model 2022 Yıllık Ücret Tabloları için tıklayınız"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Linear15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20px"
+                    android:layout_weight=".5"
+                    android:background="@drawable/circular_button"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:fontFamily="@font/sen"
+                        android:padding="25px"
+                        android:text="Banka Hesap Numaraları"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45px"
+                        android:layout_marginBottom="20px"
+                        android:fontFamily="@font/sen"
+                        android:gravity="left"
+                        android:padding="25px"
+                        android:text="• Kurumumuz tarafından verilen hizmetlerle ilgili Türk Lirası cinsinden ücretler; Ziraat Bankası nezdindeki kurumsal tahsilat hesapları, kredi kartı ve bank kart aracılığıyla tahsil edilmektedir.\n
+
+    • Kurumumuz tarafından verilen hizmetlerle ilgili döviz cinsinden ücretler sadece Ziraat Bankası Bankası nezdindeki döviz hesaplarımız aracılığıyla tahsil edilmektedir.\n
+
+    • EFT ve havale şeklinde yapılan ödemeler kabul edilmemektedir.\n
+
+    • Kurumsal hesaplara yapılacak ödemelerde;\n
+
+            • Ziraat Bankası aracılığıyla yapılacak ödemelerde şubelerde Kurumsal Tahsilat Ekranının, internet bankacılığında ise Ödemeler/Vergiler ve Resmi Kurumlar/Türk Patent ve Marka Kurumu sekmesinin, kullanılması gerekmektedir.\n"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_margin="25px"
+                android:background="@drawable/border"
+                android:stretchColumns="7">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:gravity="center"
+                        android:text="Banka"
+                        android:padding="20px"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:gravity="center"
+                        android:padding="20px"
+                        android:text="Şube\nAdı"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:background="@color/lighter_dark_blue"
+                        android:text="Hesap\nTürü"
+                        android:padding="20px"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:background="@color/lighter_dark_blue"
+                        android:text="Şube\nKodu"
+                        android:padding="20px"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:gravity="center"
+                        android:text="Cinsi"
+                        android:padding="20px"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:text="IBAN"
+                        android:padding="20px"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_span="1"
+                        android:background="@color/lighter_dark_blue"
+                        android:gravity="center"
+                        android:padding="20px"
+                        android:text="SWIFT"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:text="Ziraat\nBankası"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ankara\nKamu\nKurumsal"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Kurumsal"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="1745"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="TL"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Kurumsal\nTahsilat\nHesabı"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text=" "
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:text="Ziraat\nBankası"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ankara\nKamu\nKurumsal"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Cari\nHesap"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="1745"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="USD"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="TR42\n0017\n4534\n2721\n3253\n34"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="TCZBTR2A"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:text="Ziraat\nBankası"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ankara\nKamu\nKurumsal"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Cari\nHesap"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="1745"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="EUR"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="TR15\n0001\n0017\n4534\n2721\n3253\n35"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="TCZBTR2A"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:text="Ziraat\nBankası"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Ankara\nKamu\nKurumsal"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="Cari\nHesap"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="1745"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="CHF"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="TR85\n0001\n0017\n4534\n2721\n3253\n36"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15px"
+                        android:fontFamily="@font/sen"
+                        android:text="TCZBTR2A"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/teşvik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginEnd="25px"
+                    android:layout_marginBottom="25px"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:text="Teşvik ve Destekler"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/eğitim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginEnd="25px"
+                    android:layout_marginBottom="25px"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:text="Patent Eğitim Seti"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bilgilendirme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginEnd="25px"
+                    android:layout_marginBottom="25px"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:text="Patent/Faydalı Model Bilgilendirme"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/araştırma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginEnd="25px"
+                    android:layout_marginBottom="25px"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:text="Araştırma ve Dosya Takibi\n\nTÜRKPATENT'in veritabanında kayıtlı patentler üzerinden araştırma ve dosya takibi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:padding="40px"
+                    android:textSize="18dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/EP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginEnd="25px"
+                    android:layout_marginBottom="25px"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:text="EP-Espacenet\n\nAvrupa Patent Ofisi’nin (EPO) patent araştırma sitesi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:padding="40px"
+                    android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/WIPO"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="25px"
+                android:layout_marginTop="25px"
+                android:layout_marginEnd="25px"
+                android:layout_marginBottom="25px"
+                android:background="@drawable/circular_button"
+                android:gravity="center"
+                android:text="WIPO-Patent Scope\n\nDünya Fikri Mülkiyet Örgütü’nün (WIPO) patent araştırma sitesi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:padding="40px"
+                android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/USPTO"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="25px"
+                android:layout_marginTop="25px"
+                android:layout_marginEnd="25px"
+                android:layout_marginBottom="25px"
+                android:background="@drawable/circular_button"
+                android:gravity="center"
+                android:text="USPTO\n\nAmerika Birleşik Devletleri Patent ve Marka Ofisi’nin (USPTO) patent araştırma sitesi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:padding="40px"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

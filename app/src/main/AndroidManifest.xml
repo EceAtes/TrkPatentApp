@@ -50,6 +50,9 @@
             android:name=".kurumsal_planlar"
             android:exported="false" />
         <activity
+            android:name=".kurumsal_yonetim"
+            android:exported="false" />
+        <activity
             android:name=".kurumsal_organizasyon"
             android:exported="false" />
         <activity
